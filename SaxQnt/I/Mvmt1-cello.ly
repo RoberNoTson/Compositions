@@ -45,20 +45,22 @@ AvoiceAA = \relative c{
     a4-.  g2.      | % 7
     a4-.  \p g2.      | % 8
     a4-.  g'2( \< a4) \! \f      | % 9
-    g-.  g8 g g4 d      | % 10
-    r g,8-> -.  g-.  r4 e' \mf      | % 11
-    r a,8-> -.  a-.  r4 d      | % 12
-    r g,8-> -.  g-.  r4 d'      | % 13
+    g-.  g8-> g-. g4( d)      | % 10
+    r g,8->  g-.  r4 e' \mf      | % 11
+    r a,8->  a-.  r4 d      | % 12
+    r g,8->  g-.  r4 d'      | % 13
     g,( a) d8-.  r g4->       | % 14
     e2 d8->  \mf c-.  a4      | % 15
-    bes16-> -.  \< \p bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
-    a'8-. a-.  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
-    c-.  d-.  g,-.  c-.  g-.  g'-.  f-> ( e)      | % 18
+    bes16-> -.  \< bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
+    b'8( c)  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
+    %    c(  d)  g,-.  c-.  g-.  g'-.  f-> ( e)      | % 18
+    c(  d)  g,-.  c-.  g4  f'8-> ( e)      | % 18
     c( d) g,-.  d'-.  a( b) d4      | % 19
-    e8( d) g,-.  g'-.  g,-.  g'-.  d-.  d-.       | % 20
+    %    e8( d) g,-.  g'-.  g,-.  g'-.  d-.  d-.       | % 20
+    e8( d) g,-.  g'-.  g,4-.  d'8-.  d-.       | % 20
     g,-.  g'-.  g,-.  f'-.  d-.  r f4->       | % 21
     g8-. \upbow  a16-. \downbow ( g-.  f8-. ) e-.  b'-.  r r4      | % 22
-    f, \> \ff f f8-.  f-.  f-.  f-.  \p      | % 23
+    f, \> \ff f f8-.  f-.  f-. \p  r      | % 23
     r a-.  ^\snappizzicato \f r4 r d,-.  ^\snappizzicato      | % 24
     r fis:32  \< \p  fis2:32  \! \> \ff      | % 25
     fis4:32  \! \mf r r2      | % 26
@@ -72,10 +74,9 @@ AvoiceAA = \relative c{
     \time 4/4 
     ais8-. ->  ais-. ->  ais-. ->  b16-.  b-.  des8-.  c4 a'8->       | % 30
     %bartimesig: 
+    %bartimesig: 
     \time 3/4 
-    f16-. ->  f-.  f-.  f-.  f8-.  f-.  f-.  f-.  %bartimesig: 
-    \time 3/4 
-         | % 31
+    f16-. ->  f-.  f-.  f-.  f8-. \> f-.  f-.  f-.  %bartimesig: | % 31
     %bartimesig: 
     \time 4/4 
     b,8-.  \f b-.  b-.  c16-.  c-.  d8-.  cis4 ais'8-> -.       | % 32
@@ -120,16 +121,16 @@ AvoiceAA = \relative c{
     ees2:32 ->  cis16-.  cis-.  cis-.  cis-.  cis'-.  cis-.  cis-.  cis-.       | % 45
     %bartimesig: 
     \time 3/4 
-    r8 c16-.  c-.  d8->  cis-.  r bes ^\snappizzicato \ff      | % 46
+    r8 c16-.  c-.  d8->  cis-.  r bes ^\snappizzicato \fz      | % 46
     %bartimesig: 
     \time 4/4 
-    r4 r16 bes,-.  ^\markup {\upright  "arco"} \f bes8 r16 bes-.  bes8 bes'16->  bes-.  r8      | % 47
+    r4 r16 bes,-.  ^\markup {\upright  "arco"} bes8 r16 bes-.  bes8 bes'16->  bes-.  r8      | % 47
     %bartimesig: 
     \time 3/4 
     ees,16( f a b) r b-.  b8 c16-. ->  c-.  r8      | % 48
     %bartimesig: 
     \time 4/4 
-    dis,,8 \< \mp dis dis dis dis \! \> \fff dis dis dis \! \p      | % 49
+    dis,,8 \< \mp dis dis dis dis \> dis dis dis \!      | % 49
     %bartimesig: 
     \time 3/4 
     gis'16-.  \f gis-.  gis8 r16 gis-.  gis8 r b16->  b-.       | % 50
@@ -144,7 +145,7 @@ AvoiceAA = \relative c{
     b8-| ->  ^\markup {\upright  "sul pont."} \f b->  r c16-.  c-.  d8->  cis-.  r ais-> -.  \ff      | % 53
     %bartimesig: 
     \time 3/4 
-    cis16-. -> ^\markup {\upright  "rallentando al ..."}   b-.  r4 r8 r4    \bar "||"      | % 54
+    cis16-. -> ^\markup {\upright  "rallentando al ..."}   b-. r8 r2    \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -152,8 +153,8 @@ AvoiceAA = \relative c{
     r2 r4 r      | % 56
     <d a'>2->  \f r      | % 57
     <d a'>1 \>      | % 58
-    r4 \! a8-.  a4.\espressivo  r4      | % 59
-    gis\espressivo  \mp r a\espressivo  r      | % 60
+    r4 \! a8-. \mf  a4.\espressivo  r4      | % 59
+    gis\espressivo  \p r a\espressivo  r      | % 60
     gis\espressivo  r a\espressivo  r      | % 61
     r a\espressivo  r r      | % 62
     gis\espressivo  r r2      | % 63

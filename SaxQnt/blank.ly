@@ -15,7 +15,9 @@
 }
 \header {
   title = " "
+  subtitle = " "
+  %  subsubtitle = \markup {\italic "(Blank page)" }
   tagline = ##f
 }
 
-\markup { "(Blank page)" }
+\markup {" " }

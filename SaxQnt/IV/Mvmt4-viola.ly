@@ -59,13 +59,13 @@ AvoiceAA = \relative c'{
     r8 d \mf ^\markup {\upright  "pizz."} r4      | % 29
     r4 g \< ^\markup {\upright  "arco"} \p      | % 30
     g-- ( g-- )      | % 31
-    a2 \! \mf      | % 32
-    a      | % 33
-    g4-- ( fis-- )      | % 34
+    a2 \mf      | % 32
+    a  \<    | % 33
+    g4-- ( \> fis-- )      | % 34
     gis-- ( fis-- )      | % 35
-    e2      | % 36
+    e2 \!     | % 36
     dis \<      | % 37
-    fis4 \! \f d16-.  d8.-.       | % 38
+    fis4 \f d16-.  d8.-.       | % 38
     r4 d      | % 39
     fis-- ( fis-- )      | % 40
     fis-- ( d-- )      | % 41
@@ -80,10 +80,10 @@ AvoiceAA = \relative c'{
     \times 2/3{g8( a cis)  } \times 2/3{b( a g)  }      | % 50
     g4--  fis16-.  fis8.-.       | % 51
     gis4-- ( fis-- )      | % 52
-    e e16-.  e8.-.       | % 53
+    e e16-. \>  e8.-.       | % 53
     dis4 dis16-.  dis8.-.       | % 54
-    e4 e16-.  e8.-.       | % 55
-    e8 r r4      | % 56
+    e4 \! e16-. \< e8.-.       | % 55
+    e8 \! r r4      | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  e,-.  e-.  e-.  r      | % 58
     f-.  f-.  f-.  e-.  d-.  r r8      | % 59

@@ -45,29 +45,29 @@ AvoiceAA = \relative c'{
     R1  | % 
     r2 r4 e'( \p      | % 7
     d'2~\espressivo ) d8 b~ b4      | % 8
-    a\( b8( a)\) fis4 r      | % 9
-    r fis,8->  \mf fis-.  r4 a      | % 10
-    r fis8->  fis-.  r4 a      | % 11
+    a\( \< b8( a)\) fis4 r \!      | % 9
+    r fis,8->  \f fis-.  r4 a      | % 10
+    r fis8->  fis-.  r4 a \mf      | % 11
     r e8->  e-.  r4 g      | % 12
-    r g8->  fis-.  r4 e \mp      | % 13
+    r g8->  fis-.  r4 e      | % 13
     a( b) e,8-.  r e4(      | % 14
     fis-. ) r r2      | % 15
-    r r      | % 16
-    cis'8-> ( d-. ) a2( e4)      | % 17
+    R1      | % 16
+    cis'8-> \f ( d-. ) a2( e4)      | % 17
     d8( e) a-> -.  a-.  b( cis) fis,4      | % 18
     R1  | % 
     a'8( g) d->  fis-.  g4( fis)      | % 20
-    a,2 e8->  r r fis'16( \mp e)      | % 21
+    a,2 e8->  r r fis'16( e)      | % 21
     a,( g) b8-.  r4 e'16-. ( d-.  cis8-. ) b( a)      | % 22
     r2 r4 cis,8-> ( \< dis)      | % 23
-    a2~ \> \! \f a4 \! \p r      | % 24
+    a2~ \> \f a4 \p r      | % 24
     r2 r4 b,:32  \f      | % 25
     R1 *2  | % 
     g'2\espressivo  \f r       \bar "||"   | % 28
     %bartimesig: 
     \time 3/4 
     \tempo "Andante con brio" 4 = 104
-    c,8-.  \< \pp c16-.  c-.  c-.  c-.  c8--  \! r4      | % 29
+    c,8-.  \< \p c16-.  c-.  c-.  c-.  c8--  \! r4      | % 29
     %bartimesig: 
     \time 4/4 
     c4. \ff cis16-.  cis-.  ees8-.  d4 b'8->       | % 30
@@ -117,7 +117,7 @@ AvoiceAA = \relative c'{
     b,4:32 ->  \ff b,:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    b'4->  r r a,16( b c cis)      | % 45
+    b'4->  r r a,16( \f b c cis)      | % 45
     %bartimesig: 
     \time 3/4 
     r16 d-.  d8 r16 d'-.  d8 d,16->  a'-.  g-.  d'-.       | % 46
@@ -149,7 +149,7 @@ AvoiceAA = \relative c'{
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
-    gis8-.  \mp r r4 r2     | % 55
+    gis8-.  \mf r r4 r2     | % 55
     r2 r4 b,8-> \downbow  \< cis-.       | % 56
     f1 \! \f      | % 57
     f2->  r      | % 58

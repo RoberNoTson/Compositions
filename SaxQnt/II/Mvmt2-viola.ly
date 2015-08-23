@@ -41,7 +41,7 @@ AvoiceAA = \relative c'{
     aes'8-.  \mf r r des,-.  r r f-.  r r      | % 11
     aes,-.  bes-.  c-.  des-.  r r f( \< ^\markup {\upright  "arco"} \p \downbow fis g)      | % 12
     aes-.  bes-.  c-.  des-.  \! \f r r2      | % 13
-    des,,2.( \< ^\markup {\upright  "arco"} \p \upbow aes'4.)      | % 14
+    des,,2.( \< \p \upbow aes'4.)      | % 14
     ges4.( \mf ees4. des4.)      | % 15
     c4. des4( fes8) ees4.      | % 16
     aes4. a8( \< \p bes b) c-.  des-. ( ees-. )      | % 17

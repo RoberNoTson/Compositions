@@ -59,13 +59,13 @@ AvoiceAA = \relative c'{
     R2  | % 
     r4 fis' \< \p      | % 30
     e-- ( fis-- )      | % 31
-    dis2 \! \mf      | % 32
-    dis      | % 33
-    d4-- ( b-- )      | % 34
+    dis2 \mf      | % 32
+    dis \<     | % 33
+    d4-- ( \> b-- )      | % 34
     dis-- ( b-- )      | % 35
-    fis'2      | % 36
+    fis'2 \!     | % 36
     b, \<      | % 37
-    cis~ \! \f      | % 38
+    cis~ \f      | % 38
     cis      | % 39
     cis4-- ( dis-- )      | % 40
     cis-- ( d-- )      | % 41

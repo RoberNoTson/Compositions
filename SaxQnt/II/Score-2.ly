@@ -58,7 +58,7 @@ ATSaxvoiceAA = \relative c'{
     ees \f f ees d ees d b-.  c( b)      | % 19
     c2.\espressivo  r4.      | % 20
     c,8 \< \p d dis e r r g( a b)      | % 21
-    f( \< \mp fis g) d-.  d'-.  d,-.  r e( d)      | % 22
+    f( \< \mp fis g) d-.  d'-. r r e,( d)      | % 22
     g4. \mf r4. r4.      | % 23
     f8( \< \p g gis a) ais-.  b-.  c \! \ff r4      | % 24
     ees,2. \f r4.      | % 25
@@ -81,7 +81,7 @@ ATSaxvoiceAA = \relative c'{
     f4.) ees8( d4.) bes'8      | % 40
     f'1\espressivo ( \< \fp      | % 41
     f)       | % 42
-    \times 8/12{f32( \> \f e ees d des c b bes a aes g ges  } \times 8/12{f e ees d des c b bes a aes g ges  } fis4) \ppp r      | % 43
+    f2 \> \f \glissando fis,,4 \ppp r      | % 43
     cis8.( \< \p d16 dis e f fis) \times 4/6{b16( \! \> \mp bes a aes g ges  } f8-. ) \! \p r      | % 44
     r2 b16( \mf c d) r r4      | % 45
     r c16( e d) a r4 c16( \mp d e) g      | % 46
@@ -91,14 +91,14 @@ ATSaxvoiceAA = \relative c'{
     r \times 2/3{b'8( \p d f  } \times 2/3{e b a  } f8) r      | % 50
     r2 e8 \pp cis' r4      | % 51
     R1  | % 
-    r4 \times 2/3{b8( \pp d f  } e16 d b a fis8) r      | % 53
+    r4 \times 2/3{b8( \pp d f)  } e16( d b a fis8) r      | % 53
     r2 r4 f'16( \pp d b gis      | % 54
     dis4) r r2      | % 55
-    a''2. \pp r4     \bar "||"     | % 56
+    r1     \bar "||"     | % 56
     %bartimesig: 
     \time 2/4 
     \tempo "Moderato" 4 = 112  
-    a16( \p fis d b a d b a)      | % 57
+    a''16( \p fis d b a d b a)      | % 57
     g'( e c a g c a g)      | % 58
     a'( \< fis d b a d b a)      | % 59
     g'( \f e c a g a c d)      | % 60
@@ -210,8 +210,8 @@ AVlnvoiceBA = \relative c'{
     \tempo "Moderato" 4 = 112  
     R2 *2  | % 
     r8. c'16-.  \f ^\markup {\upright  "arco"} b-.  d8.      | % 59
-    a,16( f d b) a( b d e)      | % 60
-    b'-.  d8. r4      | % 61
+    a16( f d b) a( b d e)      | % 60
+    b-.  d8. r4      | % 61
     r r8 r16 c'-.  \f      | % 62
     b-.  d8.( \< \p d4) \! \f      | % 63
     R2 *3  | % 
@@ -413,7 +413,7 @@ AVlavoiceDA = \relative c'{
     aes'8-.  \mf r r des,-.  r r f-.  r r      | % 11
     aes,-.  bes-.  c-.  des-.  r r f( \< ^\markup {\upright  "arco"} \p \downbow fis g)      | % 12
     aes-.  bes-.  c-.  des-.  \! \f r r2      | % 13
-    des,,2.( \< ^\markup {\upright  "arco"} \p \upbow aes'4.)      | % 14
+    des,,2.( \< \p \upbow aes'4.)      | % 14
     ges4.( \mf ees4. des4.)      | % 15
     c4. des4( fes8) ees4.      | % 16
     aes4. a8( \< \p bes b) c-.  des-. ( ees-. )      | % 17

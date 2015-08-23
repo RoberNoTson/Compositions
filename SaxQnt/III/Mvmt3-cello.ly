@@ -37,9 +37,9 @@ AvoiceAA = \relative c{
     R1 *2  | % 
     r4 a ^\markup {\upright  "pizz."} \p aes2\fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    r r4 fis'~ ^\markup {\upright  "arco"} \mf      | % 20
-    fis1      | % 21
-    f8.( ges16) a8( ges) e ees16( f c a) cis,8      | % 22
+    r r4 fis'~ ^\markup {\upright  "arco"} \f      | % 20
+    fis1 \>     | % 21
+    f8.( \mf ges16) a8( ges) e ees16( f c a) cis,8      | % 22
     gis'( dis' cis c) d( c) d4      | % 23
     e,8( a) c( f) fis( gis) cis4      | % 24
     bes,( ees,) aes des      | % 25
@@ -49,11 +49,11 @@ AvoiceAA = \relative c{
     a1 \<    \bar "||"      | % 29
     cis,,4 \! \ff a e' cis      | % 30
     fis,( b) e2 \breathe     | % 31
-    bes4. bes8-.  bes4. bes8-.       | % 32
+    bes4. \mf bes8-.  bes4. bes8-.       | % 32
     b4. b8-.  b4. b8-.       | % 33
     d4. d8-.  dis4. dis8-.       | % 34
     e4. \< e8-.  e4. e8-.       | % 35
-    cis-.  \! \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
+    cis-. \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
     c-.  c-.  c-.  c-.  fis-.  \< fis-.  fis-.  fis-.       | % 37
     f-.  \! \mf f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 38
     a16-.  a-.  a-.  a-.  g-.  g-.  g-.  g-.  gis8-.  gis-.  gis-.  r      | % 39

@@ -92,8 +92,8 @@ AvoiceAA = \relative c'{
     \tempo "Moderato" 4 = 112  
     R2 *2  | % 
     r8. c'16-.  \f ^\markup {\upright  "arco"} b-.  d8.      | % 59
-    a,16( f d b) a( b d e)      | % 60
-    b'-.  d8. r4      | % 61
+    a16( f d b) a( b d e)      | % 60
+    b-.  d8. r4      | % 61
     r r8 r16 c'-.  \f      | % 62
     b-.  d8.( \< \p d4) \! \f      | % 63
     R2 *3  | % 

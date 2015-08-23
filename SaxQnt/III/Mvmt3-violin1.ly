@@ -38,8 +38,8 @@ AvoiceAA = \relative c'{
     r b:32 \espressivo       | % 18
     r4 cis:32 -.  g2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    cis1~ \mf      | % 20
-    cis2~ cis8 f( a, gis)      | % 21
+    cis1~ \f \>      | % 20
+    cis2~ \mf cis8 f( a, gis)      | % 21
     a4 c d8--  r fis4      | % 22
     b,8( fis a g) e'( a, bes g)      | % 23
     b( d g, bes) ees( b) b( e)      | % 24
@@ -50,10 +50,10 @@ AvoiceAA = \relative c'{
     a1 \<  \bar "||"      | % 29
     a,4 \! \ff a e8( fis) gis4      | % 30
     a8\(( gis) fis4\) e2  \breathe     | % 31
-    ais,8( b) a16( cis c fis) f4 d8( dis)      | % 32
+    ais,8( \mf b) a16( cis c fis) f4 d8( dis)      | % 32
     e4--  g--  gis--  r      | % 33
     d8( cis) ais4 a16( gis b c) fis8( g)      | % 34
-    dis( f) e4 r2      | % 35
+    dis( \< f) e4 r2 \!     | % 35
     r r4 \arpeggioArrowUp <g,, d' a' e'>\arpeggio  ^\markup {\upright  "pizz."} \mf      | % 36
     r b'4.( \< ^\markup {\upright  "arco"} \p fis8) ais4      | % 37
     r2 \! aes16( \mf c g d) a'( e' b'8)      | % 38

@@ -17,7 +17,7 @@
   ragged-last-bottom = ##f
   ragged-bottom = ##f  
   system-separator-markup = \slashSeparator 
-  first-page-number = 19		%% CHANGE THIS NUMBER
+  first-page-number = 18		%% CHANGE THIS NUMBER
   print-first-page-number = ##t  
   two-sided = ##t
   binding-offset = 0.25\in
@@ -68,13 +68,13 @@ ATSaxvoiceAA = \relative c'{
     R2  | % 
     r4 fis' \< \p      | % 30
     e-- ( fis-- )      | % 31
-    dis2 \! \mf      | % 32
-    dis      | % 33
-    d4-- ( b-- )      | % 34
+    dis2 \mf      | % 32
+    dis  \<    | % 33
+    d4-- ( \> b-- )      | % 34
     dis-- ( b-- )      | % 35
-    fis'2      | % 36
+    fis'2 \!     | % 36
     b, \<      | % 37
-    cis~ \! \f      | % 38
+    cis~ \f      | % 38
     cis      | % 39
     cis4-- ( dis-- )      | % 40
     cis-- ( d-- )      | % 41
@@ -137,7 +137,7 @@ ATSaxvoiceAA = \relative c'{
     a2    \bar "||"      | % 105
     %barkeysig: 
     \key b \major 
-    \tempo "Moderato semplice" 4 = 91  
+    \tempo "Moderato semplice" 4 = 92  
     R2  | % 106
     %bartimesig: 
     \time 3/4 
@@ -235,11 +235,11 @@ AVlnvoiceBB = \relative c'{
     r8 b ^\markup {\upright  "pizz."} \mf r4      | % 29
     r4 e \< ^\markup {\upright  "arco"} \p      | % 30
     d-- ( e-- )      | % 31
-    cis2 \! \mf      | % 32
-    cis      | % 33
-    c4-- ( b-- )      | % 34
+    cis2 \mf      | % 32
+    cis \<     | % 33
+    c4-- ( \> b-- )      | % 34
     c-- ( b-- )      | % 35
-    c2      | % 36
+    c2 \!     | % 36
     cis \<      | % 37
     e~ \! \f      | % 38
     e      | % 39
@@ -256,10 +256,10 @@ AVlnvoiceBB = \relative c'{
     \times 2/3{cis( dis f)  } \times 2/3{g( e cis)  }      | % 50
     c4-- ( b-- )      | % 51
     cis-- ( b-- )      | % 52
-    c2      | % 53
+    c2 \>     | % 53
     cis      | % 54
-    c      | % 55
-    b8 r r4      | % 56
+    c \<     | % 55
+    b8 \! r r4      | % 56
     fis'16-.  \f fis-.  fis-.  fis-.  fis-.  fis-.  a-.  r      | % 57
     r a-.  a-.  a-.  fis-.  fis-.  fis-.  r      | % 58
     a,-.  a-.  cis-.  c-.  b-.  r r8      | % 59
@@ -453,11 +453,11 @@ AVlnvoiceCA = \relative c'{
     r8 g \mf ^\markup {\upright  "pizz."} r r      | % 29
     r4 b \< ^\markup {\upright  "arco"} \p      | % 30
     b-- ( b-- )      | % 31
-    b2 \! \mf      | % 32
-    b      | % 33
-    a4-- ( a-- )      | % 34
+    b2 \mf      | % 32
+    b \<     | % 33
+    a4-- ( \> a-- )      | % 34
     gis-- ( a-- )      | % 35
-    a2      | % 36
+    a2 \!     | % 36
     a \<      | % 37
     d4 \! \f a16-.  a8.-.       | % 38
     r4 a      | % 39
@@ -474,10 +474,10 @@ AVlnvoiceCA = \relative c'{
     \times 2/3{b( cis dis)  } \times 2/3{f( dis cis)  }      | % 50
     a4--  a16-.  a8.-.       | % 51
     gis4-- ( a-- )      | % 52
-    a a16-.  a8.-.       | % 53
+    a a16-.  a8.-. \>      | % 53
     a4 a16-.  a8.-.       | % 54
-    a4 a16-.  a8.-.       | % 55
-    a8 r r4      | % 56
+    a4 a16-. \<  a8.-.       | % 55
+    a8 \! r r4      | % 56
     e'16-.  \f e-.  e-.  e-.  e-.  e-.  g-.  r      | % 57
     r g-.  g-.  g-.  d-.  d-.  d-.  r      | % 58
     g,-.  g-.  f-.  fis-.  g-.  r r8      | % 59
@@ -533,7 +533,7 @@ AVlnvoiceCA = \relative c'{
     R2 *3    \bar "||"     | % 
     %barkeysig: 
     \key a \major 
-    \tempo "Moderato semplice" 4 = 91  
+    \tempo "Moderato semplice" 4 = 92  
     R2  | % 
     %bartimesig: 
     \time 3/4 
@@ -629,13 +629,13 @@ AVlavoiceDA = \relative c'{
     r8 d \mf ^\markup {\upright  "pizz."} r4      | % 29
     r4 g \< ^\markup {\upright  "arco"} \p      | % 30
     g-- ( g-- )      | % 31
-    a2 \! \mf      | % 32
-    a      | % 33
-    g4-- ( fis-- )      | % 34
+    a2 \mf      | % 32
+    a \<     | % 33
+    g4-- ( \> fis-- )      | % 34
     gis-- ( fis-- )      | % 35
-    e2      | % 36
+    e2 \!     | % 36
     dis \<      | % 37
-    fis4 \! \f d16-.  d8.-.       | % 38
+    fis4 \f d16-.  d8.-.       | % 38
     r4 d      | % 39
     fis-- ( fis-- )      | % 40
     fis-- ( d-- )      | % 41
@@ -650,10 +650,10 @@ AVlavoiceDA = \relative c'{
     \times 2/3{g8( a cis)  } \times 2/3{b( a g)  }      | % 50
     g4--  fis16-.  fis8.-.       | % 51
     gis4-- ( fis-- )      | % 52
-    e e16-.  e8.-.       | % 53
+    e e16-. \>  e8.-.       | % 53
     dis4 dis16-.  dis8.-.       | % 54
-    e4 e16-.  e8.-.       | % 55
-    e8 r r4      | % 56
+    e4 \! e16-. \< e8.-.       | % 55
+    e8 \! r r4      | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  e,-.  e-.  e-.  r      | % 58
     f-.  f-.  f-.  e-.  d-.  r r8      | % 59
@@ -710,7 +710,7 @@ AVlavoiceDA = \relative c'{
     R2 *3    \bar "||"     | %
     %barkeysig: 
     \key a \major 
-    \tempo "Moderato semplice" 4 = 91  
+    \tempo "Moderato semplice" 4 = 92  
     R2  | % 
     %bartimesig: 
     \time 3/4 
@@ -807,13 +807,13 @@ AVlcvoiceEA = \relative c{
     r4 f16( \< \p g gis b)      | % 29
     e2~      | % 30
     e      | % 31
-    \times 2/3{gis8( \! \f fis e)  } \times 2/3{d( e fis)  }      | % 32
-    \times 2/3{gis( fis e)  } \times 2/3{d( e fis)  }      | % 33
-    a4->  gis~ \>      | % 34
+    \times 2/3{gis8( \f fis e) \>  } \times 2/3{d( e fis)  }      | % 32
+    \times 2/3{gis( \< fis e)  } \times 2/3{d( e fis)  }      | % 33
+    a4-> \! gis~ \>      | % 34
     gis2      | % 35
-    \times 2/3{a8( \! \mf dis, cis)  } \times 2/3{b( cis dis)  }      | % 36
+    \times 2/3{a8( \mf dis, cis)  } \times 2/3{b( cis dis)  }      | % 36
     \times 2/3{f( \< dis cis)  } \times 2/3{b( cis dis)  }      | % 37
-    fis2~ \! \f      | % 38
+    fis2~ \f      | % 38
     fis      | % 39
     d4-- ( b-- )      | % 40
     d-- ( fis-- )      | % 41
@@ -828,9 +828,9 @@ AVlcvoiceEA = \relative c{
     f,8 r r4      | % 50
     r c'16-.  c8.-.       | % 51
     b4-- ( d,-- )      | % 52
-    e2      | % 53
+    e2 \>     | % 53
     fis4 fis16-.  fis8.-.       | % 54
-    a,8-.  a-.  a16-.  a8.-.       | % 55
+    a,8-. \!  a-.  a16-. \< a8.-.       | % 55
     a8-.  r d-.  d-.       | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
@@ -890,18 +890,19 @@ AVlcvoiceEA = \relative c{
     e2~    \bar "||"      | % 105
     %barkeysig: 
     \key a \major 
-    \tempo "Moderato semplice" 4 = 91  
+    \tempo "Moderato semplice" 4 = 92  
     e4 r      | % 106
     %bartimesig: 
     \time 3/4 
-    R2. *8  | % 
+    R2. *7  | % 
+    r4 d8( \p \< e fis gis)
     a2. \mf      | % 115
     e'2.      | % 116
     b2.      | % 117
-    cis2.      | % 118
-    fis,2.      | % 119
+    cis2 cis,8( e)      | % 118
+    fis2.      | % 119
     e2.      | % 120
-    d4 e e      | % 121
+    d4( e) e      | % 121
     a2 r4      | % 122
     %bartimesig: 
     \time 2/4 

@@ -10,8 +10,6 @@
 #(set-global-staff-size 14)
 
 \paper {
-  %  line-width    = 180\mm
-  %  left-margin   = 20\mm
   inner-margin = 0.75\in
   outer-margin = 0.75\in
   top-margin    = 0.5\in
@@ -24,12 +22,13 @@
   print-first-page-number = ##t  
   two-sided = ##t
   binding-offset = 0.25\in
+  print-all-headers = ##t
   }
 
 \header {
     title = "Tweets From Texas"
     subtitle = "for TEnor saX And String quartet"
-    subsubtitle = "1. #Alamo"
+    %    subtitle = "1. #Alamo"
     composer = "Mark Roberson"
     tagline = ##f
     copyright = \markup { "Copyright "\char ##x00A9 "2015 by Mark Roberson" }    
@@ -58,19 +57,19 @@ ATSaxvoiceAA = \relative c'{
     R1  | % 
     r2 r4 e'( \p      | % 7
     d'2~\espressivo ) d8 b~ b4      | % 8
-    a\( b8( a)\) fis4 r      | % 9
-    r fis,8->  \mf fis-.  r4 a      | % 10
-    r fis8->  fis-.  r4 a      | % 11
+    a\( \< b8( a)\) fis4 r \!     | % 9
+    r fis,8->  \f fis-.  r4 a      | % 10
+    r fis8->  fis-.  r4 a \mf     | % 11
     r e8->  e-.  r4 g      | % 12
-    r g8->  fis-.  r4 e \mp      | % 13
+    r g8->  fis-.  r4 e       | % 13
     a( b) e,8-.  r e4(      | % 14
     fis-. ) r r2      | % 15
-    r r      | % 16
-    cis'8-> ( d-. ) a2( e4)      | % 17
+    R1     | % 16
+    cis'8-> \f ( d-. ) a2( e4)      | % 17
     d8( e) a-> -.  a-.  b( cis) fis,4      | % 18
     R1  | % 
     a'8( g) d->  fis-.  g4( fis)      | % 20
-    a,2 e8->  r r fis'16( \mp e)      | % 21
+    a,2 e8->  r r fis'16( e)      | % 21
     a,( g) b8-.  r4 e'16-. ( d-.  cis8-. ) b( a)      | % 22
     r2 r4 cis,8-> ( \< dis)      | % 23
     a2~ \> \! \f a4 \! \p r      | % 24
@@ -80,7 +79,7 @@ ATSaxvoiceAA = \relative c'{
     %bartimesig: 
     \time 3/4 
     \tempo "Andante con brio" 4 = 104
-    c,8-.  \< \pp c16-.  c-.  c-.  c-.  c8--  \! r4      | % 29
+    c,8-.  \< \p c16-.  c-.  c-.  c-.  c8--  \! r4      | % 29
     %bartimesig: 
     \time 4/4 
     c4. \ff cis16-.  cis-.  ees8-.  d4 b'8->       | % 30
@@ -130,7 +129,7 @@ ATSaxvoiceAA = \relative c'{
     b,4:32 ->  \ff b,:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    b'4->  r r a,16( b c cis)      | % 45
+    b'4->  r r a,16( \f b c cis)      | % 45
     %bartimesig: 
     \time 3/4 
     r16 d-.  d8 r16 d'-.  d8 d,16->  a'-.  g-.  d'-.       | % 46
@@ -161,7 +160,7 @@ ATSaxvoiceAA = \relative c'{
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
-    gis8-.  \mp r r4 r2     | % 55
+    gis8-.  \mf r r4 r2     | % 55
     r2 r4 b,8-> \downbow  \< cis-.       | % 56
     f1 \! \f      | % 57
     f2->  r      | % 58
@@ -226,9 +225,7 @@ AVlnvoiceBA = \relative c'{
     g,16-> -.  \ff g-.  g8 g16-> -.  g-.  g8 g16-> -.  g-.  g8 g16-> -.  g-.  g8      | % 30
     %bartimesig: 
     \time 3/4 
-    g16-> -.  g-.  g8 b,( d e fis) %bartimesig: 
-    \time 3/4 
-         | % 31
+    g16-> -.  g-.  g8 b,( \> d e fis)  | % 31
     %bartimesig: 
     \time 4/4 
     gis16-> -.  \f gis-.  gis8 gis16-> -.  gis-.  gis8 gis16-> -.  gis-.  gis8 gis16-> -.  gis-.  gis8      | % 32
@@ -270,7 +267,7 @@ AVlnvoiceBA = \relative c'{
     <d f>4:32 ->  \ff <d fis>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <d f>2:32 ->  f16:32 e: d: c: f: e: d: c:      | % 45
+    <d f>2:32 -> \> f16:32 \f e: d: c: f: e: d: c:      | % 45
     %bartimesig: 
     \time 3/4 
     g16->  g-.  r8 g16->  g-.  r8 g16->  g-.  r8      | % 46
@@ -297,7 +294,7 @@ AVlnvoiceBA = \relative c'{
     g16-.  g-.  g8 g16-.  g-.  g8 g16-.  g-.  g8 g16->  g-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    cis,16-. -> ^\markup {\upright  "rallentando al ..."}  b-.  r8 r4 r    \bar "||"      | % 54
+    cis,16-. -> \ff ^\markup {\upright  "rallentando al ..."}  b-. r8 r2  \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -306,8 +303,8 @@ AVlnvoiceBA = \relative c'{
     <ees' c'>1 \f      | % 57
     <ees c'>2->  r      | % 58
     R1 *5  | % 
-    <d, fis>1(\( \> \pp ^\markup {\upright  "sul pont."}      | % 64
-    <d fis>2.\)) \! \bar "|." 
+    <d, fis>1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
+    <d fis>2.) \! \bar "|." 
 }% end of last bar in partorvoice
 
  
@@ -332,7 +329,7 @@ AVlnvoiceCA = \relative c'{
     r g8->  g-.  r4 a      | % 5
     r g8->  g-.  r4 g      | % 6
     r g8->  g-.  r4 a \p      | % 7
-    r g8->  g-.  r4 g      | % 8
+    r g8->  g-.  r4 g \<     | % 8
     r g8->  g-.  r4 g8-> ( \f a-. )      | % 9
     c2~ c      | % 10
     c2. g8-> ( \mf a-. )      | % 11
@@ -362,9 +359,7 @@ AVlnvoiceCA = \relative c'{
     f16-> -.  \ff f-.  f8 f16-> -.  f-.  f8 f16-> -.  f-.  f8 f16-> -.  f-.  f8      | % 30
     %bartimesig: 
     \time 3/4 
-    f16-> -.  f-.  f8 b,( d e fis) %bartimesig: 
-    \time 3/4 
-         | % 31
+    f16-> -.  f-.  f8 b,( \> d e fis)  | % 31
     %bartimesig: 
     \time 4/4 
     fis16-> -.  \f fis-.  fis8 fis16-> -.  fis-.  fis8 fis16-> -.  fis-.  fis8 fis16-> -.  fis-.  fis8      | % 32
@@ -406,7 +401,7 @@ AVlnvoiceCA = \relative c'{
     <ees bes'>4:32 ->  \! \ff <ees bes'>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <ees bes'>2:32 ->  d'16:32 c: bes: a: d: c: bes: a:      | % 45
+    <ees bes'>2:32 -> \> d'16:32 \f c: bes: a: d: c: bes: a:      | % 45
     %bartimesig: 
     \time 3/4 
     f16->  f-.  r8 f16->  f-.  r8 f16->  f-.  r8      | % 46
@@ -433,7 +428,7 @@ AVlnvoiceCA = \relative c'{
     f16-.  f-.  f8 f16-.  f-.  f8 f16-.  f-.  f8 f16->  f-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    cis16-. -> ^\markup {\upright  "rallentando al ..."}  b-.  r8 r4 r    \bar "||"      | % 54
+    cis16-. -> \ff ^\markup {\upright  "rallentando al ..."}  b-. r8 r2    \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -468,7 +463,7 @@ AVlavoiceDA = \relative c'{
     r f8->  f-.  r4 f      | % 5
     r e8->  e-.  r4 d      | % 6
     r e8->  e-.  r4 e \p      | % 7
-    r e8->  e-.  r4 f      | % 8
+    r e8->  e-.  r4 f \<      | % 8
     r d8->  d-.  r4 g,8-> ( \f a-. )      | % 9
     g'2~ g      | % 10
     g2. g,8-> ( \mf a-. )      | % 11
@@ -484,8 +479,8 @@ AVlavoiceDA = \relative c'{
     r2 d'16-. ( c-.  b8-. ) a-.  c-.       | % 21
     g-.  r r4 d'16-. ( c-.  b8-. ) a( g)      | % 22
     r4 r8 e, ^\snappizzicato r2      | % 23
-    r4 b'8 ^\snappizzicato \f r r4 g~ ^\markup {\upright  "arco"}      | % 24
-    g2\espressivo  r      | % 25
+    r4 b'8 ^\snappizzicato \f r r4 g~ ^\markup {\upright  "arco"} \mf \<     | % 24
+    g2\espressivo \! r      | % 25
     r4 dis2:32  \fp  r4      | % 26
     r8 ees' ^\snappizzicato \f r4 r2   | % 27
     r bes16->  ^\markup {\upright  "arco"} \ff bes-.  bes8 bes16->  bes-.  bes8        \bar "||"     | % 28
@@ -498,12 +493,10 @@ AVlavoiceDA = \relative c'{
     c'16-> -.  c-.  c8 c16-> -.  c-.  c8 c16-> -.  c-.  c-.  c-.  c8->  c-.       | % 30
     %bartimesig: 
     \time 3/4 
-    c16-> -.  c-.  c8 f,-.  f-.  g-.  g-.  %bartimesig: 
-    \time 3/4 
-         | % 31
+    c16-> -.  c-.  c8 f,-. \> f-.  g-.  g-.     | % 31
     %bartimesig: 
     \time 4/4 
-    cis16-> -.  \f cis-.  cis8 cis16-> -.  cis-.  cis8 cis16-> -.  cis-.  cis-.  cis-.  cis8->  cis-.       | % 32
+    cis16-> -. \f cis-.  cis8 cis16-> -.  cis-.  cis8 cis16-> -.  cis-.  cis-.  cis-.  cis8->  cis-.       | % 32
     %bartimesig: 
     \time 4/4 
     dis16-> -.  dis-.  dis8 dis16-> -.  dis-.  dis8 dis16-> -.  dis-.  dis-.  dis-.  dis8->  r      | % 33
@@ -542,7 +535,7 @@ AVlavoiceDA = \relative c'{
     <bes g'>4:32 -> \ff <a ges'>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <bes g'>2:32 ->  \times 4/6{<b f'>16-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   } \times 4/6{<b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   }      | % 45
+    <bes g'>2:32 -> \> \times 4/6{<b f'>16-. \f <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   } \times 4/6{<b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   }      | % 45
     %bartimesig: 
     \time 3/4 
     r16 c-.  c8 r16 c-.  c8 c16->  c-.  r8      | % 46
@@ -569,7 +562,7 @@ AVlavoiceDA = \relative c'{
     \times 4/6{c16-.  c-.  c-.  c-.  c-.  c-.   } \times 4/6{c-. ->  c-.  c-.  c-.  c-.  c-.   } \times 4/6{c-. ->  c-.  c-.  c-.  c-.  c-.   } <g c>8->  r      | % 53
     %bartimesig: 
     \time 3/4 
-    r4 ^\markup {\upright  "rallentando al ..."} cis ^\snappizzicato \mf r    \bar "||"      | % 54
+    r4 ^\markup {\upright  "rallentando al ..."} cis ^\snappizzicato \f r    \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -607,20 +600,20 @@ AVlcvoiceEA = \relative c{
     a4-.  g2.      | % 7
     a4-.  \p g2.      | % 8
     a4-.  g'2( \< a4) \! \f      | % 9
-    g-.  g8 g g4 d      | % 10
-    r g,8-> -.  g-.  r4 e' \mf      | % 11
-    r a,8-> -.  a-.  r4 d      | % 12
-    r g,8-> -.  g-.  r4 d'      | % 13
+    g-.  g8-> g-. g4( d)      | % 10
+    r g,8->  g-.  r4 e' \mf      | % 11
+    r a,8->  a-.  r4 d      | % 12
+    r g,8->  g-.  r4 d'      | % 13
     g,( a) d8-.  r g4->       | % 14
     e2 d8->  \mf c-.  a4      | % 15
-    bes16-> -.  \< \p bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
-    a'8-. a-.  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
-    c-.  d-.  g,-.  c-.  g-.  g'-.  f-> ( e)      | % 18
+    bes16-> \< bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
+    b'8( c)  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
+    c(  d)  g,-.  c-.  g4  f'8-> ( e)      | % 18
     c( d) g,-.  d'-.  a( b) d4      | % 19
-    e8( d) g,-.  g'-.  g,-.  g'-.  d-.  d-.       | % 20
+    e8( d) g,-.  g'-.  g,4-.  d'8-.  d-.       | % 20
     g,-.  g'-.  g,-.  f'-.  d-.  r f4->       | % 21
     g8-. \upbow  a16-. \downbow ( g-.  f8-. ) e-.  b'-.  r r4      | % 22
-    f, \> \ff f f8-.  f-.  f-.  f-.  \! \p      | % 23
+    f, \> \ff f f8-.  f-.  f-. \p  r      | % 23
     r a-.  ^\snappizzicato \f r4 r d,-.  ^\snappizzicato      | % 24
     r fis:32  \< \p  fis2:32  \! \> \ff      | % 25
     fis4:32  \! \mf r r2      | % 26
@@ -635,9 +628,7 @@ AVlcvoiceEA = \relative c{
     ais8-. ->  ais-. ->  ais-. ->  b16-.  b-.  des8-.  c4 a'8->       | % 30
     %bartimesig: 
     \time 3/4 
-    f16-. ->  f-.  f-.  f-.  f8-.  f-.  f-.  f-.  %bartimesig: 
-    \time 3/4 
-         | % 31
+    f16-. ->  f-.  f-.  f-.  f8-. \> f-.  f-.  f-.  %bartimesig: | % 31
     %bartimesig: 
     \time 4/4 
     b,8-.  \f b-.  b-.  c16-.  c-.  d8-.  cis4 ais'8-> -.       | % 32
@@ -676,22 +667,22 @@ AVlcvoiceEA = \relative c{
     b16( cis) f,8-.  r4 dis'16-. ->  fis-.  r8 e,16-> -.  \< e-.  e-.  e-.       | % 43
     %bartimesig: 
     \time 2/4 
-    ees4:32 ->  \! \ff ees:32 ->       | % 44
+    ees4:32 ->  \ff ees:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    ees2:32 ->  cis16-.  cis-.  cis-.  cis-.  cis'-.  cis-.  cis-.  cis-.       | % 45
+    ees2:32 -> \> cis16-. \f cis-.  cis-.  cis-.  cis'-.  cis-.  cis-.  cis-.       | % 45
     %bartimesig: 
     \time 3/4 
-    r8 c16-.  c-.  d8->  cis-.  r bes ^\snappizzicato \ff      | % 46
+    r8 c16-.  c-.  d8->  cis-.  r bes ^\snappizzicato \fz      | % 46
     %bartimesig: 
     \time 4/4 
-    r4 r16 bes,-.  ^\markup {\upright  "arco"} \f bes8 r16 bes-.  bes8 bes'16->  bes-.  r8      | % 47
+    r4 r16 bes,-.  ^\markup {\upright  "arco"} bes8 r16 bes-.  bes8 bes'16->  bes-.  r8      | % 47
     %bartimesig: 
     \time 3/4 
     ees,16( f a b) r b-.  b8 c16-. ->  c-.  r8      | % 48
     %bartimesig: 
     \time 4/4 
-    dis,,8 \< \mp dis dis dis dis \! \> \fff dis dis dis \! \p      | % 49
+    dis,,8 \< \mp dis dis dis dis \> dis dis dis \!      | % 49
     %bartimesig: 
     \time 3/4 
     gis'16-.  \f gis-.  gis8 r16 gis-.  gis8 r b16->  b-.       | % 50
@@ -706,7 +697,7 @@ AVlcvoiceEA = \relative c{
     b8-| ->  ^\markup {\upright  "sul pont."} \f b->  r c16-.  c-.  d8->  cis-.  r ais-> -.  \ff      | % 53
     %bartimesig: 
     \time 3/4 
-    cis16-. -> ^\markup {\upright  "rallentando al ..."}   b-.  r4 r8 r4    \bar "||"      | % 54
+    cis16-. -> ^\markup {\upright  "rallentando al ..."}   b-. r8 r2    \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -714,8 +705,8 @@ AVlcvoiceEA = \relative c{
     r2 r4 r      | % 56
     <d a'>2->  \f r      | % 57
     <d a'>1 \>      | % 58
-    r4 \! a8-.  a4.\espressivo  r4      | % 59
-    gis\espressivo  \mp r a\espressivo  r      | % 60
+    r4 \! a8-. \mf a4.\espressivo  r4      | % 59
+    gis\espressivo  \p r a\espressivo  r      | % 60
     gis\espressivo  r a\espressivo  r      | % 61
     r a\espressivo  r r      | % 62
     gis\espressivo  r r2      | % 63
@@ -765,4 +756,9 @@ AVlcvoiceEA = \relative c{
   %% Eulenburg and Philharmonia, like Lilypond, have no barlines between staffgroups.
   %% If you want the Eulenburg/Lilypond style, comment out the following line:
   \layout {\context {\Score \consists Span_bar_engraver}}
+  \header {
+    title = " "
+    subtitle = "1. #Alamo"
+    composer = " "
+  }    
 }%% end of score-block 

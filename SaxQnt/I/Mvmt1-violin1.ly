@@ -72,9 +72,7 @@ AvoiceAA = \relative c'{
     g,16-> -.  \ff g-.  g8 g16-> -.  g-.  g8 g16-> -.  g-.  g8 g16-> -.  g-.  g8      | % 30
     %bartimesig: 
     \time 3/4 
-    g16-> -.  g-.  g8 b,( d e fis) %bartimesig: 
-    \time 3/4 
-         | % 31
+    g16-> -.  g-.  g8 b,( \> d e fis)  | % 31
     %bartimesig: 
     \time 4/4 
     gis16-> -.  \f gis-.  gis8 gis16-> -.  gis-.  gis8 gis16-> -.  gis-.  gis8 gis16-> -.  gis-.  gis8      | % 32
@@ -116,7 +114,7 @@ AvoiceAA = \relative c'{
     <d f>4:32 ->  \ff <d fis>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <d f>2:32 ->  f16:32 e: d: c: f: e: d: c:      | % 45
+    <d f>2:32 -> \> f16:32 \f e: d: c: f: e: d: c:      | % 45
     %bartimesig: 
     \time 3/4 
     g16->  g-.  r8 g16->  g-.  r8 g16->  g-.  r8      | % 46
@@ -143,7 +141,7 @@ AvoiceAA = \relative c'{
     g16-.  g-.  g8 g16-.  g-.  g8 g16-.  g-.  g8 g16->  g-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    cis,16-. -> ^\markup {\upright  "rallentando al ..."}  b-.  r8 r4 r    \bar "||"      | % 54
+    cis,16-. -> \ff ^\markup {\upright  "rallentando al ..."}  b-. r8 r2  \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
@@ -152,8 +150,8 @@ AvoiceAA = \relative c'{
     <ees' c'>1 \f      | % 57
     <ees c'>2->  r      | % 58
     R1 *5  | % 
-    <d, fis>1(\( \> \pp ^\markup {\upright  "sul pont."}      | % 64
-    <d fis>2.\)) \! \bar "|." 
+    <d, fis>1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
+    <d fis>2.) \! \bar "|." 
 }% end of last bar in partorvoice
 
 ApartA =  << 

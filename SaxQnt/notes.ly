@@ -1,6 +1,7 @@
 \version "2.16.2"
 
 #(set-default-paper-size "letter")
+%#(set-global-staff-size 24)
 
 \header {
   title = "Performance Notes"
@@ -23,7 +24,7 @@
   \line { " " }
   \line { " " }
   \line { \italic { For Greg, } }
-  \line { \italic { who convinced me that the tenor sax could blend well with strings, in spite of my doubts. }
+  \line { \italic { who convinced me that the tenor sax could blend well with strings }
 }
 }
 }
@@ -49,9 +50,14 @@
     \line { \italic "whip trem." }
     \line { " " }
     \line { " " }
+    \line { \italic "8vb, Pedal" }
+    \line { " " }
+    \line { " " }
+    \line { " " }
+    \line { " " }
     \line { \italic "col legno" }
     \line { " " }
-    \line { \larger \musicglyph #"scripts.arpeggio" \musicglyph #"scripts.arpeggio.arrow.M1" }
+    \line { \huge \musicglyph #"scripts.arpeggio" \musicglyph #"scripts.arpeggio.arrow.M1" }
     }
     %    \hspace #0
     \left-column {
@@ -61,6 +67,10 @@
     \line { " " }
       \override #'(line-width . 82)
     \wordwrap { rapid horizontal movement of the bow between bridge and fingerboard; usually played at the tip of the bow }
+    \line { " " }
+    \line { " " }
+      \override #'(line-width . 82)
+      \wordwrap { Pedal tone, sounding 1 octave below the written pitch. Performed by drawing the bow slowly with firm pressure at the exact point of the string where the third octave harmnoic occurs; approximately equidistant between the bridge and fingerboard. }
     \line { " " }
     \line { " " }
       \override #'(line-width . 82)
@@ -89,7 +99,7 @@
 \markup {
   \wordwrap { Similar to the 140 character limit of Tweets, these short musical ideas are constrained by time or measure count. 
     Each section within a movement expresses a simple reaction to some part of the locale indicated by the title/hashtag, without any significant musical development of the idea. 
-    Collectively they form a group of impressions that reflect various aspects of each location.
+    Collectively they form a melange of impressions from each location.
   }
 }
 

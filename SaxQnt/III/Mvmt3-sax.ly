@@ -46,8 +46,8 @@ AvoiceAA = \relative c'{
     r8 d f,( fis) c4( cis)      | % 18
     a'2. r4 \fermata \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    r b,2( \mf gis4)      | % 20
-    fis2( d'4) r      | % 21
+    r b,2( \f \> gis4)      | % 20
+    fis2( \mf d'4) r      | % 21
     g,8.( aes16) b8( aes) ges r r4      | % 22
     fis'4.( g8) b4( g)      | % 23
     r ees,16( f aes bes) r4 cis16( dis) fis( f)      | % 24
@@ -56,7 +56,7 @@ AvoiceAA = \relative c'{
     c) r r8 r4 r2      | % 27
     g'8 e c'16( a f d) bes'8 ees, gis16( cis) fis,-.  b,~      | % 28
     b1 \<    \bar "||"      | % 29
-    b4 \f b' cis dis,      | % 30
+    b4 \ff b' cis dis,      | % 30
     gis( f) ais2  \breathe     | % 31
     R1 *4  | % 
     dis,16( \< \p ais' f c' g d' fis a, cis e gis b) \mf r4      | % 36
@@ -67,17 +67,17 @@ AvoiceAA = \relative c'{
     r2 e,,16-.  \p e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 42
     a4-.  aes2 \pp r8 ees'~\fermata  \p    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72  
-    ees1~\espressivo       | % 44
-    ees8 e( d ges) f4.( b,8)      | % 45
-    bes( g') gis4 r8 a,16( c cis4)      | % 46
-    e16( f ees8) g2.      | % 47
-    fis1      | % 48
-    r8 c( b gis') a4.( bes8)      | % 49
-    cis4( d) c( b8.) gis16(      | % 50
-    g fis) a,( bes) e2 r4      | % 51
+    ees1~\espressivo  \<     | % 44
+    ees8 \! e( d ges) f4.( b,8)      | % 45
+    bes( \> g') gis4 r8 \! a,16( c cis4)      | % 46
+    e16( \< f ees8) g2.      | % 47
+    fis1 \>     | % 48
+    r8 \! c( b gis') a4.( \< bes8)      | % 49
+    cis4( \! d) c( b8.) gis16(      | % 50
+    g fis) a,( bes) e2 \> r4      | % 51
     f( \pp des ees-. ) d~      | % 52
-    d1~      | % 53
-    d8 r r4 r2  \bar "|."      | % 54
+    d1~ \>     | % 53
+    d8 \! r r4 r2  \bar "|."      | % 54
 }% end of last bar in partorvoice
 
 ApartA =  << 

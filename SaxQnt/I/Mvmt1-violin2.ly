@@ -43,7 +43,7 @@ AvoiceAA = \relative c'{
     r g8->  g-.  r4 a      | % 5
     r g8->  g-.  r4 g      | % 6
     r g8->  g-.  r4 a \p      | % 7
-    r g8->  g-.  r4 g      | % 8
+    r g8->  g-.  r4 g \<     | % 8
     r g8->  g-.  r4 g8-> ( \f a-. )      | % 9
     c2~ c      | % 10
     c2. g8-> ( \mf a-. )      | % 11
@@ -73,9 +73,7 @@ AvoiceAA = \relative c'{
     f16-> -.  \ff f-.  f8 f16-> -.  f-.  f8 f16-> -.  f-.  f8 f16-> -.  f-.  f8      | % 30
     %bartimesig: 
     \time 3/4 
-    f16-> -.  f-.  f8 b,( d e fis) %bartimesig: 
-    \time 3/4 
-         | % 31
+    f16-> -.  f-.  f8 b,( \> d e fis)  | % 31
     %bartimesig: 
     \time 4/4 
     fis16-> -.  \f fis-.  fis8 fis16-> -.  fis-.  fis8 fis16-> -.  fis-.  fis8 fis16-> -.  fis-.  fis8      | % 32
@@ -114,10 +112,10 @@ AvoiceAA = \relative c'{
     r4 \arpeggioArrowDown <g, d' a' e'>8\arpeggio ->  ^\markup {\upright  "pizz."} r r <e' cis'>16-.  ^\markup {\upright  "arco"} <e cis'>-.  <e cis'>-.  \< <e cis'>-.  <e cis'>-.  <e cis'>-.       | % 43
     %bartimesig: 
     \time 2/4 
-    <ees bes'>4:32 ->  \! \ff <ees bes'>:32 ->       | % 44
+    <ees bes'>4:32 ->  \ff <ees bes'>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <ees bes'>2:32 ->  d'16:32 c: bes: a: d: c: bes: a:      | % 45
+    <ees bes'>2:32 -> \> d'16:32 \f c: bes: a: d: c: bes: a:      | % 45
     %bartimesig: 
     \time 3/4 
     f16->  f-.  r8 f16->  f-.  r8 f16->  f-.  r8      | % 46
@@ -144,7 +142,7 @@ AvoiceAA = \relative c'{
     f16-.  f-.  f8 f16-.  f-.  f8 f16-.  f-.  f8 f16->  f-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    cis16-. -> ^\markup {\upright  "rallentando al ..."}  b-.  r8 r4 r    \bar "||"      | % 54
+    cis16-. -> \ff ^\markup {\upright  "rallentando al ..."}  b-. r8 r2    \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  

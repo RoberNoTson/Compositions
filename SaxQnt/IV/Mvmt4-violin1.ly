@@ -60,13 +60,13 @@ AvoiceAB = \relative c'{
     r8 b ^\markup {\upright  "pizz."} \mf r4      | % 29
     r4 e \< ^\markup {\upright  "arco"} \p      | % 30
     d-- ( e-- )      | % 31
-    cis2 \! \mf      | % 32
-    cis      | % 33
-    c4-- ( b-- )      | % 34
+    cis2 \mf      | % 32
+    cis \<     | % 33
+    c4-- ( \> b-- )      | % 34
     c-- ( b-- )      | % 35
-    c2      | % 36
+    c2 \!     | % 36
     cis \<      | % 37
-    e~ \! \f      | % 38
+    e~ \f      | % 38
     e      | % 39
     e4-- ( e-- )      | % 40
     e-- ( a,-- )      | % 41
@@ -81,10 +81,10 @@ AvoiceAB = \relative c'{
     \times 2/3{cis( dis f)  } \times 2/3{g( e cis)  }      | % 50
     c4-- ( b-- )      | % 51
     cis-- ( b-- )      | % 52
-    c2      | % 53
+    c2 \>     | % 53
     cis      | % 54
-    c      | % 55
-    b8 r r4      | % 56
+    c \<     | % 55
+    b8 \! r r4      | % 56
     fis'16-.  \f fis-.  fis-.  fis-.  fis-.  fis-.  a-.  r      | % 57
     r a-.  a-.  a-.  fis-.  fis-.  fis-.  r      | % 58
     a,-.  a-.  cis-.  c-.  b-.  r r8      | % 59

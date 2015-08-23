@@ -38,8 +38,8 @@ AvoiceAA = \relative c'{
     r f:32 \espressivo       | % 18
     r4 e:32 -.  fis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    e1~ \mf      | % 20
-    e2.~ e16 e-.  dis-.  g-.       | % 21
+    e1~ \f \>      | % 20
+    e2.~ \mf e16 e-.  dis-.  g-.       | % 21
     e-.  ees-.  des-.  ees-.  f-.  des-.  gis-.  b-.  a8--  r \times 2/3{d,16( b' g')  } \times 2/3{g( b, d,)  }      | % 22
     r4 f( a f)      | % 23
     <ees aes>1\espressivo       | % 24
@@ -50,10 +50,10 @@ AvoiceAA = \relative c'{
     <a d\harmonic>1 \open  \<    \bar "||"      | % 29
     a4 \ff a e8( fis) gis4      | % 30
     a8\(( gis) fis4\) e2  \breathe     | % 31
-    bes'8( a) fis16( f e g) aes4 d,8( dis)      | % 32
+    bes'8( \mf a) fis16( f e g) aes4 d,8( dis)      | % 32
     b'4--  cis--  c--  r      | % 33
     d,8( dis) cis( f) e4 ais16( a fis g)      | % 34
-    gis4 b8 c-.  r2      | % 35
+    gis4 \< b8 c-.  r2 \!     | % 35
     r r4 \arpeggioArrowUp <g, d' a' e'>\arpeggio  ^\markup {\upright  "pizz."} \mf      | % 36
     R1  | % 
     cis'16( ^\markup {\upright  "arco"} \mf f, gis c) ees,4 r2      | % 38

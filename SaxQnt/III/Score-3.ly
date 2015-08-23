@@ -17,7 +17,7 @@
   ragged-last-bottom = ##f
   ragged-bottom = ##f  
   system-separator-markup = \slashSeparator 
-  first-page-number = 15		%% CHANGE THIS NUMBER
+  first-page-number = 14		%% CHANGE THIS NUMBER
   print-first-page-number = ##t  
   two-sided = ##t
   binding-offset = 0.25\in
@@ -55,8 +55,8 @@ ATSaxvoiceAA = \relative c'{
     r8 d f,( fis) c4( cis)      | % 18
     a'2. r4 \fermata \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    r b,2( \mf gis4)      | % 20
-    fis2( d'4) r      | % 21
+    r b,2( \f \> gis4)      | % 20
+    fis2( \mf d'4) r      | % 21
     g,8.( aes16) b8( aes) ges r r4      | % 22
     fis'4.( g8) b4( g)      | % 23
     r ees,16( f aes bes) r4 cis16( dis) fis( f)      | % 24
@@ -65,10 +65,10 @@ ATSaxvoiceAA = \relative c'{
     c) r r8 r4 r2      | % 27
     g'8 e c'16( a f d) bes'8 ees, gis16( cis) fis,-.  b,~      | % 28
     b1 \<    \bar "||"      | % 29
-    b4 \! \f b' cis dis,      | % 30
+    b4 \ff b' cis dis,      | % 30
     gis( f) ais2  \breathe     | % 31
     R1 *4  | % 
-    dis,16( \< \p ais' f c' g d' fis a, cis e gis b) \! \mf r4      | % 36
+    dis,16( \< \p ais' f c' g d' fis a, cis e gis b) \mf r4      | % 36
     R1 *2  | % 
     r2 r4 bes,16( \mf g ees c')      | % 39
     aes( f des8) r fis' b,16( e) a,( d) r4      | % 40
@@ -76,17 +76,17 @@ ATSaxvoiceAA = \relative c'{
     r2 e,,16-.  \p e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 42
     a4-.  aes2 \pp r8 ees'~\fermata  \p    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72
-    ees1~\espressivo       | % 44
-    ees8 e( d ges) f4.( b,8)      | % 45
-    bes( g') gis4 r8 a,16( c cis4)      | % 46
-    e16( f ees8) g2.      | % 47
-    fis1      | % 48
-    r8 c( b gis') a4.( bes8)      | % 49
-    cis4( d) c( b8.) gis16(      | % 50
-    g fis) a,( bes) e2 r4      | % 51
+    ees1~\espressivo \<      | % 44
+    ees8 \! e( d ges) f4.( b,8)      | % 45
+    bes( \> g') gis4 \! r8 a,16( c cis4)      | % 46
+    e16( \< f ees8) g2.      | % 47
+    fis1 \>     | % 48
+    r8 \! c( b gis') a4.( \< bes8)      | % 49
+    cis4( \! d) c( b8.) gis16(      | % 50
+    g fis) a,( bes) e2 \> r4      | % 51
     f( \pp des ees-. ) d~      | % 52
-    d1~      | % 53
-    d8 r r4 r2  \bar "|."      | % 54
+    d1~ \>     | % 53
+    d8 \! r r4 r2  \bar "|."      | % 54
 }% end of last bar in partorvoice
 
  
@@ -110,8 +110,8 @@ AVlnvoiceBA = \relative c'{
     r b:32 \espressivo       | % 18
     r4 cis:32 -.  g2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    cis1~ \mf      | % 20
-    cis2~ cis8 f( a, gis)      | % 21
+    cis1~ \f \>      | % 20
+    cis2~ \mf cis8 f( a, gis)      | % 21
     a4 c d8--  r fis4      | % 22
     b,8( fis a g) e'( a, bes g)      | % 23
     b( d g, bes) ees( b) b( e)      | % 24
@@ -122,10 +122,10 @@ AVlnvoiceBA = \relative c'{
     a1 \<  \bar "||"      | % 29
     a,4 \! \ff a e8( fis) gis4      | % 30
     a8\(( gis) fis4\) e2  \breathe     | % 31
-    ais,8( b) a16( cis c fis) f4 d8( dis)      | % 32
+    ais,8( \mf b) a16( cis c fis) f4 d8( dis)      | % 32
     e4--  g--  gis--  r      | % 33
     d8( cis) ais4 a16( gis b c) fis8( g)      | % 34
-    dis( f) e4 r2      | % 35
+    dis( \< f) e4 r2 \!      | % 35
     r r4 \arpeggioArrowUp <g,, d' a' e'>\arpeggio  ^\markup {\upright  "pizz."} \mf      | % 36
     r b'4.( \< ^\markup {\upright  "arco"} \p fis8) ais4      | % 37
     r2 \! aes16( \mf c g d) a'( e' b'8)      | % 38
@@ -160,8 +160,8 @@ AVlnvoiceCA = \relative c'{
     r f:32 \espressivo       | % 18
     r4 e:32 -.  fis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    e1~ \mf      | % 20
-    e2.~ e16 e-.  dis-.  g-.       | % 21
+    e1~ \f \>      | % 20
+    e2.~ \mf e16 e-.  dis-.  g-.       | % 21
     e-.  ees-.  des-.  ees-.  f-.  des-.  gis-.  b-.  a8--  r \times 2/3{d,16( b' g')  } \times 2/3{g( b, d,)  }      | % 22
     r4 f( a f)      | % 23
     <ees aes>1\espressivo       | % 24
@@ -172,10 +172,10 @@ AVlnvoiceCA = \relative c'{
     <a d\harmonic>1 \open  \<    \bar "||"      | % 29
     a4 \ff a e8( fis) gis4      | % 30
     a8\(( gis) fis4\) e2  \breathe     | % 31
-    bes'8( a) fis16( f e g) aes4 d,8( dis)      | % 32
+    bes'8( \mf a) fis16( f e g) aes4 d,8( dis)      | % 32
     b'4--  cis--  c--  r      | % 33
     d,8( dis) cis( f) e4 ais16( a fis g)      | % 34
-    gis4 b8 c-.  r2      | % 35
+    gis4 \< b8 c-.  r2 \!     | % 35
     r r4 \arpeggioArrowUp <g, d' a' e'>\arpeggio  ^\markup {\upright  "pizz."} \mf      | % 36
     R1  | % 
     cis'16( ^\markup {\upright  "arco"} \mf f, gis c) ees,4 r2      | % 38
@@ -213,8 +213,8 @@ AVlavoiceDA = \relative c'{
     r c:32 \espressivo       | % 18
     r4 d:32 -.  dis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    r4 a2.~ \mf      | % 20
-    a8( d,) b'( g) c4~ c16 bes( d b)      | % 21
+    r4 a2.~ \f \>     | % 20
+    a8( \mf d,) b'( g) c4~ c16 bes( d b)      | % 21
     c( bes aes8~) aes4 g16-.  aes-.  aes-.  bes-.  r4      | % 22
     e1      | % 23
     <des ges>16-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.       | % 24
@@ -225,10 +225,10 @@ AVlavoiceDA = \relative c'{
     a1 \<    \bar "||"      | % 29
     e,4 \! \ff cis gis e'      | % 30
     cis( b) b2  \breathe     | % 31
-    bes4 \downbow a8( b) g16( gis d' dis) fis4      | % 32
+    bes4 \downbow \mf a8( b) g16( gis d' dis) fis4      | % 32
     f8( e) cis4--  c--  r      | % 33
     d cis dis8( b) c4      | % 34
-    fis16( g bes a) aes( f) e8-.  r2      | % 35
+    fis16( \< g bes a) aes( f) e8-.  r2 \!     | % 35
     R1 *2  | % 
     r4 ees,16( \mf fis ais cis) f,4 r      | % 38
     \arpeggioArrowUp <c g' d' a'>\arpeggio  ^\markup {\upright  "pizz."} \p r r2      | % 39
@@ -262,9 +262,9 @@ AVlcvoiceEA = \relative c{
     R1 *2  | % 
     r4 a ^\markup {\upright  "pizz."} \p aes2\fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
-    r r4 fis'~ ^\markup {\upright  "arco"} \mf      | % 20
-    fis1      | % 21
-    f8.( ges16) a8( ges) e ees16( f c a) cis,8      | % 22
+    r r4 fis'~ ^\markup {\upright  "arco"} \f      | % 20
+    fis1 \>     | % 21
+    f8.( \mf ges16) a8( ges) e ees16( f c a) cis,8      | % 22
     gis'( dis' cis c) d( c) d4      | % 23
     e,8( a) c( f) fis( gis) cis4      | % 24
     bes,( ees,) aes des      | % 25
@@ -274,11 +274,11 @@ AVlcvoiceEA = \relative c{
     a1 \<    \bar "||"      | % 29
     cis,,4 \! \ff a e' cis      | % 30
     fis,( b) e2  \breathe     | % 31
-    bes4. bes8-.  bes4. bes8-.       | % 32
+    bes4. \mf bes8-.  bes4. bes8-.       | % 32
     b4. b8-.  b4. b8-.       | % 33
     d4. d8-.  dis4. dis8-.       | % 34
     e4. \< e8-.  e4. e8-.       | % 35
-    cis-.  \! \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
+    cis-. \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
     c-.  c-.  c-.  c-.  fis-.  \< fis-.  fis-.  fis-.       | % 37
     f-.  \! \mf f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 38
     a16-.  a-.  a-.  a-.  g-.  g-.  g-.  g-.  gis8-.  gis-.  gis-.  r      | % 39

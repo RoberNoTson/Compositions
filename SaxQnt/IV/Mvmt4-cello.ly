@@ -59,9 +59,9 @@ AvoiceAA = \relative c{
     r4 f16( \< \p g gis b)      | % 29
     e2~      | % 30
     e      | % 31
-    \times 2/3{gis8( \! \f fis e)  } \times 2/3{d( e fis)  }      | % 32
-    \times 2/3{gis( fis e)  } \times 2/3{d( e fis)  }      | % 33
-    a4->  gis~ \>      | % 34
+    \times 2/3{gis8( \f fis \> e)  } \times 2/3{d( e fis)  }      | % 32
+    \times 2/3{gis( fis \< e)  } \times 2/3{d( e fis)  }      | % 33
+    a4-> \! gis~ \>      | % 34
     gis2      | % 35
     \times 2/3{a8( \! \mf dis, cis)  } \times 2/3{b( cis dis)  }      | % 36
     \times 2/3{f( \< dis cis)  } \times 2/3{b( cis dis)  }      | % 37
@@ -80,9 +80,9 @@ AvoiceAA = \relative c{
     f,8 r r4      | % 50
     r c'16-.  c8.-.       | % 51
     b4-- ( d,-- )      | % 52
-    e2      | % 53
+    e2 \>     | % 53
     fis4 fis16-.  fis8.-.       | % 54
-    a,8-.  a-.  a16-.  a8.-.       | % 55
+    a,8-. \!  a-.  a16-. \< a8.-.       | % 55
     a8-.  r d-.  d-.       | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
@@ -146,15 +146,16 @@ AvoiceAA = \relative c{
     e4 r      | % 106
     %bartimesig: 
     \time 3/4 
-    R2. *8  | % 
+    R2. *7  | % 
     \pageBreak
+    r4 d8( \p \< e fis gis)
     a2. \mf      | % 115
     e'2.      | % 116
     b2.      | % 117
-    cis2.      | % 118
-    fis,2.      | % 119
+    cis2 cis,8( e)      | % 118
+    fis2.      | % 119
     e2.      | % 120
-    d4 e e      | % 121
+    d4( e) e      | % 121
     a2 r4      | % 122
     %bartimesig: 
     \time 2/4 

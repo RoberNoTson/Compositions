@@ -43,7 +43,7 @@ AvoiceAA = \relative c'{
     r f8->  f-.  r4 f      | % 5
     r e8->  e-.  r4 d      | % 6
     r e8->  e-.  r4 e \p      | % 7
-    r e8->  e-.  r4 f      | % 8
+    r e8->  e-.  r4 f \<     | % 8
     r d8->  d-.  r4 g,8-> ( \f a-. )      | % 9
     g'2~ g      | % 10
     g2. g,8-> ( \mf a-. )      | % 11
@@ -59,8 +59,8 @@ AvoiceAA = \relative c'{
     r2 d'16-. ( c-.  b8-. ) a-.  c-.       | % 21
     g-.  r r4 d'16-. ( c-.  b8-. ) a( g)      | % 22
     r4 r8 e, ^\snappizzicato \f r2      | % 23
-    r4 b'8 ^\snappizzicato \f r r4 g~ \f ^\markup {\upright  "arco"}      | % 24
-    g2\espressivo  r      | % 25
+    r4 b'8 ^\snappizzicato \f r r4 g~ ^\markup {\upright  "arco"} \mf \<     | % 24
+    g2\espressivo \! r      | % 25
     r4 dis2:32  \fp  r4      | % 26
     r8 ees' ^\snappizzicato \f r4 r2   | % 27
     r bes16->  ^\markup {\upright  "arco"} \ff bes-.  bes8 bes16->  bes-.  bes8        \bar "||"     | % 28
@@ -73,9 +73,7 @@ AvoiceAA = \relative c'{
     c'16-> -.  c-.  c8 c16-> -.  c-.  c8 c16-> -.  c-.  c-.  c-.  c8->  c-.       | % 30
     %bartimesig: 
     \time 3/4 
-    c16-> -.  c-.  c8 f,-.  f-.  g-.  g-.  %bartimesig: 
-    \time 3/4 
-         | % 31
+    c16-> -.  c-.  c8 f,-. \> f-.  g-.  g-.     | % 31
     %bartimesig: 
     \time 4/4 
     cis16-> -.  \f cis-.  cis8 cis16-> -.  cis-.  cis8 cis16-> -.  cis-.  cis-.  cis-.  cis8->  cis-.       | % 32
@@ -117,7 +115,7 @@ AvoiceAA = \relative c'{
     <bes g'>4:32 ->  \! \ff <a ges'>:32 ->       | % 44
     %bartimesig: 
     \time 4/4 
-    <bes g'>2:32 ->  \times 4/6{<b f'>16-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   } \times 4/6{<b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   }      | % 45
+    <bes g'>2:32 -> \> \times 4/6{<b f'>16-. \f <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   } \times 4/6{<b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.  <b f'>-.   }      | % 45
     %bartimesig: 
     \time 3/4 
     r16 c-.  c8 r16 c-.  c8 c16->  c-.  r8      | % 46
@@ -148,7 +146,7 @@ AvoiceAA = \relative c'{
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
-    fis1~\espressivo  \mf ^\markup {\upright  "arco"}      | % 55
+    fis1~\espressivo  \f ^\markup {\upright  "arco"}      | % 55
     fis2. \mp r4      | % 56
     <fis, d'>2->  \f r      | % 57
     <fis d'>1 \>      | % 58
