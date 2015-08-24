@@ -34,7 +34,8 @@ AvoiceAA = \relative c{
     R1 *3  | % 
     ais,4-. \downbow  \pp ais2.\downbow       | % 15
     b2( c) \!      | % 16
-    R1 *2  | % 
+    r4 r \fermata r2 | %
+    R1  | % 
     r4 a ^\markup {\upright  "pizz."} \p aes2\fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
     r r4 fis'~ ^\markup {\upright  "arco"} \f      | % 20
@@ -50,8 +51,8 @@ AvoiceAA = \relative c{
     cis,,4 \! \ff a e' cis      | % 30
     fis,( b) e2 \breathe     | % 31
     bes4. \mf bes8-.  bes4. bes8-.       | % 32
-    b4. b8-.  b4. b8-.       | % 33
-    d4. d8-.  dis4. dis8-.       | % 34
+    b4. \< b8-.  b4. b8-.       | % 33
+    d4. \> d8-.  dis4. \! dis8-.       | % 34
     e4. \< e8-.  e4. e8-.       | % 35
     cis-. \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
     c-.  c-.  c-.  c-.  fis-.  \< fis-.  fis-.  fis-.       | % 37

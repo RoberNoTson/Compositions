@@ -38,13 +38,13 @@ AvoiceAA = \relative c'{
     f'2. \> r4 \!      | % 8
     fis( \p d e-. ) ees~ \>      | % 9
     ees1~      | % 10
-    ees8 \pp r r4 r2      | % 11
+    ees8 \! r r4 r2      | % 11
     R1 *3  | % 
     ais,4-.  \pp ais2.      | % 15
     eis2( fis)      | % 16
-    r4 gis' \p g8\(( e') ees4\)      | % 17
-    r8 d f,( fis) c4( cis)      | % 18
-    a'2. r4 \fermata \breathe    \bar "||"      | % 19
+    r4 gis' \p \fermata \< g8\(( \! e') ees4\)      | % 17
+    r8 d f,( fis) c4( \> cis)      | % 18
+    a'2. \! r4 \fermata \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
     r b,2( \f \> gis4)      | % 20
     fis2( \mf d'4) r      | % 21

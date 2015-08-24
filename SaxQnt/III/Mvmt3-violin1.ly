@@ -34,7 +34,7 @@ AvoiceAA = \relative c'{
     R1 *3  | % 
     g4-. \downbow  \pp g2.\downbow       | % 15
     a2( f)      | % 16
-    r a:32 \espressivo  ^\markup {\upright  "whip tremolo"} \pp      | % 17
+    r a:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r b:32 \espressivo       | % 18
     r4 cis:32 -.  g2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
@@ -45,7 +45,7 @@ AvoiceAA = \relative c'{
     b( d g, bes) ees( b) b( e)      | % 24
     e,( g b d) fis( a) c4      | % 25
     aes,,8( ees') bes'( f) c'( f) c'4      | % 26
-    g2 d'      | % 27
+    g2 d' \espressivo      | % 27
     cis16( gis dis ais') f( c e g) b8( d) fis-.  a~        | % 28
     a1 \<  \bar "||"      | % 29
     a,4 \! \ff a e8( fis) gis4      | % 30

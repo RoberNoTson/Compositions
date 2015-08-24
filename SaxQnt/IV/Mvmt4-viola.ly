@@ -100,10 +100,10 @@ AvoiceAA = \relative c'{
     R1  | % 
     r8 g,-.  r g-.  a4 gis      | % 68
     dis'-> -.  f8--  \mf fis--  dis( c) cis( d)      | % 69
-    \times 2/3{b'4 ais g  } \times 2/3{e gis a  }      | % 70
-    d,2->  r      | % 71
-    e4-.  e8( f) e( dis) b( c)      | % 72
-    d2->  r      | % 73
+    \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
+    d,2-> \!  d      | % 71
+    e4-.  e8( \f f) e( dis) b( c)      | % 72
+    d2-> \> r \!      | % 73
     c8-.  e( \< dis fis) a( gis g ais)      | % 74
     r \! b,-.  \f r b-.  b4 b      | % 75
     r8 b-.  r b-.  a4 a      | % 76
@@ -192,8 +192,8 @@ AvoiceAA = \relative c'{
     des8-.  des16-.  des-.  des8-.  des16-.  des-.       | % 162
     des8-.  des16-.  des-.  des8-.  des16-.  des-.       | % 163
     c8-.  c16-.  c-.  c8-.  c16-.  c-.       | % 164
-    des8-.  des16-.  des-.  des8-.  des16-.  des-.     | % 165
-    c16-.  c-.  c-.  c-.  f4-.  \fz \bar "|." 
+    des8-. \<  des16-.  des-.  des8-.  des16-.  des-.     | % 165
+    c16-. \!  c-.  c-.  c-.  f4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 ApartA =  << 

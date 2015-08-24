@@ -51,7 +51,7 @@ AvoiceAA = \relative c{
     bes,8-.  \< \p bes-.  bes-. d-.  d-.  d-. f( ges f)      | % 21
     ees4. \mp r4. c'8-.  bes-.  aes-.       | % 22
     bes-.  bes-.  bes-.  bes,4 \< \p b8--  c--  cis--  d--       | % 23
-    ees-. \f \downbow ees-.(  ees-.)  ees,4. ees'4.      | % 24
+    ees-. \f \downbow ees-.(  ees-.)  ees,4. \< ees'4.      | % 24
     des2. \ff r4.      | % 25
     c8-. \f \downbow c-.(  c-.)  d4. d,      | % 26
     r a' ^\markup {\upright  "pizz."} \mf \> g      | % 27
@@ -65,10 +65,10 @@ AvoiceAA = \relative c{
     r4 r8 a ^\markup {\upright  "col legno"} \p r2      | % 37
     R1 *3  | % 
     c,,2:32 \espressivo  ^\markup {\upright  "arco"} r      | % 41
-    r8 a'' ^\markup {\upright  "col legno"} r4 r2      | % 42
+    r8 a'' \p ^\markup {\upright  "col legno"} r4 r2      | % 42
     e,8-.  \sfz ^\markup {\upright  "arco"} r r4 r2      | % 43
     R1  | % 
-    r8 a'16-.  ^\markup {\upright  "col legno"} a-.  r4 r2      | % 45
+    r8 a'16-. \p ^\markup {\upright  "col legno"} a-.  r4 r2      | % 45
     R1 *4  | % 
     r4 r8 a ^\markup {\upright  "col legno"} r2      | % 50
     R1 *2  | % 
@@ -115,13 +115,13 @@ AvoiceAA = \relative c{
     f-. \ff f-. \mf f-.  f-.       | % 97
     f-.  f-.  f-.  f-.       | % 98
     f-.  \< \p f-.  f-.  f-.       | % 99
-    f-.  f-.  f-.  f-.  \! \f      | % 100
+    f16-.  f-. f-. f-. f-. f-. f-. f-.  \!      | % 100
     R2 *4  | % 
     d8-.  \mf d-.  d-.  d-.       | % 105
     d-.  d-.  d-.  d-.       | % 106
     g''16( e c a) g( c a g)      | % 107
     d,8-.  d-.  d-.  d-.       | % 108
-    e-.  e-.  e-.  e-.       | % 109
+    e-.  e-.  e16-. \< e-. e-. e-.      | % 109
     e16-.  \f e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 110
     e-.  e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 111
     e'-.  \< e-.  e-.  e-.  f-.  f-.  f-.  f-.     | % 112

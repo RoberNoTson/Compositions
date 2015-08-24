@@ -40,7 +40,7 @@ AvoiceAA = \relative c'{
     R1*9/8      | % 10
     aes'8-.  \mf r r des,-.  r r f-.  r r      | % 11
     aes,-.  bes-.  c-.  des-.  r r f( \< ^\markup {\upright  "arco"} \p \downbow fis g)      | % 12
-    aes-.  bes-.  c-.  des-.  \! \f r r2      | % 13
+    aes-.  bes-.  c-.  des-.  \f r r r4.     | % 13
     des,,2.( \< \p \upbow aes'4.)      | % 14
     ges4.( \mf ees4. des4.)      | % 15
     c4. des4( fes8) ees4.      | % 16
@@ -51,8 +51,8 @@ AvoiceAA = \relative c'{
     bes8-.  \< \p bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 21
     bes-.  \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
     a4.( \< \mf bes4.) r4.\!      | % 23
-    bes8-. \f \downbow bes-.(  bes-.)  bes4. bes      | % 24
-    bes2. \ff r4 r8      | % 25
+    bes8-. \f \downbow bes-.(  bes-.)  bes4. \< bes      | % 24
+    bes2. \ff r4.      | % 25
     ees8-. \f \downbow ees-.(  ees-.)  d2.      | % 26
     R1*9/8  | % 27
     R1*9/8 \bar "||"     | % 28
@@ -119,7 +119,7 @@ AvoiceAA = \relative c'{
     d,-.  \p d-.  d-.  d-.       | % 85
     d-.  d-.  d-.  d-.       | % 86
     d-.  \< d-.  d-.  d-.       | % 87
-    d-.  d-.  d-.  d-.  \! \f      | % 88
+    d-.  d-.  d16-. d-. d-. d-. \!      | % 88
     R2  | % 
     \pageBreak
     b''16-.  \f b-.  b-.  b-.  b-.  b-.  b-.  b-.       | % 90
@@ -136,12 +136,12 @@ AvoiceAA = \relative c'{
     des,8-.  \> \f des-.  des-.  des-.       | % 101
     des-.  des-.  des-.  des-.       | % 102
     des-.  \! \< \p des-.  des-.  des-.       | % 103
-    des-.  des-.  des-.  des-.  \! \ff      | % 104
+    des-.  des-.  des16-. des-. des-. des-. \ff      | % 104
     R2  | % 
     f'16( \< \mf d bes g) f( bes g f)      | % 106
     <g g'>-. \ff d'-. \< \p d-.  d-.  d-.  d-.  d-.  d-.       | % 107
     f-. \mf  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 108
-    f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 109
+    f-.  f-.  f-.  f-.  f-. \< f-.  f-.  f-.       | % 109
     f-.  \f f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 110
     f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 111
     b16-. cis8. ees,16:32 \< \p d: des: c:      | % 112

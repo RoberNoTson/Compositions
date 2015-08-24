@@ -13,6 +13,7 @@
   print-first-page-number = ##t  
   two-sided = ##t
   binding-offset = 0.25\in
+  page-count = 2
   }
 
 \header {
@@ -34,7 +35,7 @@ AvoiceAA = \relative c'{
     r4. des'8-.  ees-.  e-.  f-.  fis-.  g-.       | % 4
     aes4. r4. f8-.  bes,-.  e-.       | % 5
     gis,4. r4. f8-.  \mf bes-.  ees,-.       | % 6
-    r1 r8      | % 7
+    R1*9/8      | % 7
     r4. g8-.  bes-.  ges-.  aes-.  f-.  g-.       | % 8
     e4. r4. r4.      | % 9
     r4. b'8-.  \f r r f'-.  \< \p fis-.  g-.       | % 10
@@ -51,7 +52,7 @@ AvoiceAA = \relative c'{
     des8-.  \< \p des-.  des-.  des-.  des-.  des-.  des-.  des-.  des-.       | % 21
     ees-.  \< \mp ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.       | % 22
     f-.  \< \mf f-.  f-.  f-.  f-.  r \! r4.      | % 23
-    ees8-. \f \downbow ees-.(  ees-.)  ees4. ees4.      | % 24
+    ees8-. \f \downbow ees-.(  ees-.)  ees4. \< ees4.      | % 24
     f2. \ff r4.      | % 25
     a8-. \f \downbow a-.(  a-.)  c2.      | % 26
     R1*9/8   | % 27
@@ -138,7 +139,7 @@ AvoiceAA = \relative c'{
     R2  | % 
     r8. c'16-.  \f b-.  d8.      | % 107
     f,16( \mf d bes g) f'( g bes c)      | % 108
-    c-.  c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 109
+    c-.  c-.  c-.  c-.  c-. \< c-.  c-.  c-.       | % 109
     c-.  \f c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 110
     c-.  c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 111
     b-.  cis8. fis,16:32 \< \p f: e: ees:    | % 112

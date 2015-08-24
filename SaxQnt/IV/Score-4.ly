@@ -95,8 +95,8 @@ ATSaxvoiceAA = \relative c'{
     \tempo "poco meno mosso" 4 = 112
     r8 d-.  \mf r d-.  d4 d      | % 62
     r8 d-.  r d-.  d4 d      | % 63
-    d8->  r r4 fis,2      | % 64
-    r8 d'-.  \f r d-.  d4 d      | % 65
+    d8->  r r4 fis,2 \<     | % 64
+    r8 d'-. \f r d-.  d4 d      | % 65
     r8 d-.  r d-.  bes4 bes      | % 66
     R1  | % 
     r8 e,-.  r e-.  fis4 ais      | % 68
@@ -189,8 +189,8 @@ ATSaxvoiceAA = \relative c'{
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 162
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 163
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 164
-    b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 165
-    d16-.  d-.  d-.  d-.  c4-.  \fz \bar "|." 
+    b8-. \<  b16-.  b-.  b8-.  b16-.  b-.       | % 165
+    d16-. \! d-.  d-.  d-.  c4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
  
@@ -272,8 +272,8 @@ AVlnvoiceBB = \relative c'{
     r8 a'( \< \mf gis b) d( cis c dis)      | % 64
     e2 \! \f e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
-    r8 d( cis e) g( fis f gis)      | % 67
-    a2 r8 c( dis b)      | % 68
+    r8 d( cis e) g( \< fis f gis)      | % 67
+    a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r fis,2 \mf      | % 69
     r8 fis-.  r fis-.  e4 e      | % 70
     r8 d'4-. ->  d8-.  f4( e)      | % 71
@@ -352,7 +352,7 @@ AVlnvoiceBB = \relative c'{
     \tempo "Allegro" 4 = 132
     e4 r      | % 131
     R2 *4  | % 
-    r4 bes8 \ff c16 d      | % 136
+    r4 bes8 \f \upbow c16 d      | % 136
     f4 d      | % 137
     bes8 d16 ees f4~      | % 138
     f ees8. d16      | % 139
@@ -373,16 +373,16 @@ AVlnvoiceBB = \relative c'{
     f-.  d~      | % 154
     d2      | % 155
     f4-.  ees      | % 156
-    a8 g16 f ees8-.  d-.       | % 157
+    a8 g16 f ees8-.(  d-.)       | % 157
     c4 c16( d ees8)      | % 158
     f4-.  d~      | % 159
     d2      | % 160
     f4-.  ees~      | % 161
     ees2      | % 162
-    a8 g16 f ees8-.  d-.       | % 163
+    a8 g16 f ees8-.(  d-.)       | % 163
     c4 a      | % 164
-    bes2~     | % 165
-    bes4 <bes bes'>-. \fz \bar "|." 
+    bes2~ \<    | % 165
+    bes4 \! <bes bes'>-. \fz \bar "|." 
 }% end of last bar in partorvoice
 
 AVlnvoiceBA = \relative c'{
@@ -395,14 +395,15 @@ AVlnvoiceBA = \relative c'{
     s2. *3
     \time 2/4
     s2 *21
-    s4 \stemUp e'-0	| %
+    \override Fingering #'direction = #UP
+    s4 \stemUp e'^0	| %
     \time 3/4
     e2.    | %
     e2.      | % 
     e2.      | % 
-    e2-0 e8^~-4 e-0      | % 
+    e2 e8~^4 e^0      | % 
     e2.      | % 
-    e2 \stemDown a,4     | % 
+    e2 \stemDown \override Fingering #'direction = #DOWN a,4_0     | % 
     a \stemUp e' e8 e~      | % 
     e2.      | % 
     s2. *7
@@ -490,8 +491,8 @@ AVlnvoiceCA = \relative c'{
     r8 a( \< \mf gis b) d( cis c dis)      | % 64
     e2 \! \f e4 e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
-    r8 d( cis e) g( fis f gis)      | % 67
-    a2 r8 c( dis b)      | % 68
+    r8 d( cis e) g( \< fis f gis)      | % 67
+    a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r dis,2 \mf      | % 69
     r8 dis-.  r dis-.  e4 e      | % 70
     r8 d'4-. ->  d8-.  f4( e)      | % 71
@@ -554,7 +555,7 @@ AVlnvoiceCA = \relative c'{
     \tempo "Allegro" 4 = 132
     gis4 r      | % 131
     R2 *4  | % 
-    r4 bes8 \ff c16 d      | % 136
+    r4 bes8 \f \upbow c16 d      | % 136
     f4 d      | % 137
     bes8 d16 ees f4~      | % 138
     f ees8. d16      | % 139
@@ -575,16 +576,16 @@ AVlnvoiceCA = \relative c'{
     f-.  a,~      | % 154
     a2      | % 155
     f'4-.  c      | % 156
-    a'8 g16 f ees8-.  d-.       | % 157
+    a'8 g16 f ees8-.(  d-.)       | % 157
     c4 c16( d ees8)      | % 158
     f4-.  a,~      | % 159
     a2      | % 160
     f'4-.  c~      | % 161
     c2      | % 162
-    a'8 g16 f ees8-.  d-.       | % 163
+    a'8 g16 f ees8-.(  d-.)       | % 163
     c4 a      | % 164
-    bes2~     | % 165
-    bes4 <bes d,>-.  \fz \bar "|." 
+    bes2~ \<    | % 165
+    bes4 \! <bes d,>-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
  
@@ -670,10 +671,10 @@ AVlavoiceDA = \relative c'{
     R1  | % 
     r8 g,-.  r g-.  a4 gis      | % 68
     dis'-> -.  f8--  \mf fis--  dis( c) cis( d)      | % 69
-    \times 2/3{b'4 ais g  } \times 2/3{e gis a  }      | % 70
-    d,2->  r      | % 71
-    e4-.  e8( f) e( dis) b( c)      | % 72
-    d2->  r      | % 73
+    \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
+    d,2-> \!  d      | % 71
+    e4-.  e8( \f f) e( dis) b( c)      | % 72
+    d2-> \> r \!      | % 73
     c8-.  e( \< dis fis) a( gis g ais)      | % 74
     r \! b,-.  \f r b-.  b4 b      | % 75
     r8 b-.  r b-.  a4 a      | % 76
@@ -761,8 +762,8 @@ AVlavoiceDA = \relative c'{
     des8-.  des16-.  des-.  des8-.  des16-.  des-.       | % 162
     des8-.  des16-.  des-.  des8-.  des16-.  des-.       | % 163
     c8-.  c16-.  c-.  c8-.  c16-.  c-.       | % 164
-    des8-.  des16-.  des-.  des8-.  des16-.  des-.     | % 165
-    c16-.  c-.  c-.  c-.  f4-.  \fz \bar "|." 
+    des8-. \< des16-.  des-.  des8-.  des16-.  des-.     | % 165
+    c16-. \!  c-.  c-.  c-.  f4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
  
@@ -836,22 +837,22 @@ AVlcvoiceEA = \relative c{
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
     f,-.  f-.  f-.  f-.  f-.  r r8      | % 59
     r f16-.  f-.  f-.  f-.  r a,-.       | % 60
-    b8-.  r r4 \bar "||"     | % 61
+    b8-.  r f16( \mf \< fis g gis) \bar "||"     | % 61
     %bartimesig: 
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     a4.->  \f r8 e'4.->  r8      | % 62
-    a,4.->  r8 e4.->  r8      | % 63
-    a->  r r4 e'2      | % 64
-    a,4.->  r8 a4.-> -.  a8-.       | % 65
+    a,4.-> \> r8 e4.->  r8      | % 63
+    a-> \mf r r4 e'2 \<     | % 64
+    a,4.-> \f r8 a4.-> -.  a8-.       | % 65
     a4.->  r8 b4.-> -.  b8-.       | % 66
     bes4->  r e2      | % 67
     a,4.->  r8 c4.-> -.  b8-.       | % 68
     ais4-> -.  f'8--  \mf fis--  dis( c) cis( d)      | % 69
-    \times 2/3{b'4 ais g  } \times 2/3{e gis a  }      | % 70
-    d,2->  r      | % 71
-    gis4-.  e'8( f) e( dis) b( c)      | % 72
-    d,2->  r      | % 73
+    \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
+    d,2-> \! d4 (e16 f fis g)      | % 71
+    gis4-. e'8( \f f) e( dis) b( c)      | % 72
+    d,2-> \>  r \!     | % 73
     a8-.  e'( \< dis fis) a( gis g ais)      | % 74
     e,4.->  \! \f r8 e4.-> -.  e8-.       | % 75
     e4.->  r8 fis4.-> -.  fis8-.       | % 76
@@ -885,9 +886,9 @@ AVlcvoiceEA = \relative c{
     cis-.  g-.  c-.  g-.       | % 100
     b-.  g-.  ais-.  fis-.       | % 101
     ees2 \ff      | % 102
-    d \f      | % 103
+    d \>      | % 103
     c      | % 104
-    e2~    \bar "||"      | % 105
+    e2~ \mp   \bar "||"      | % 105
     %barkeysig: 
     \key a \major 
     \tempo "Moderato semplice" 4 = 92  
@@ -951,8 +952,8 @@ AVlcvoiceEA = \relative c{
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 162
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 163
     fis8-.  fis16-.  fis-.  fis8-.  fis16-.  fis-.       | % 164
-    f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 165
-    f16-.  f-.  f-.  f-.  bes4-.  \fz \bar "|." 
+    f8-. \<  f16-.  f-.  f8-.  f16-.  f-.       | % 165
+    f16-. \! f-.  f-.  f-.  bes4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 

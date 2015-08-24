@@ -29,14 +29,14 @@ AvoiceAA = \relative c'{
     \time 4/4 
     \tempo "Adagio" 4 = 72  
     R1 *9  | % 
-    ais2 \pp a      | % 10
+    ais2( \pp a)      | % 10
     c2. r4      | % 11
     ees,16( \< \p f gis a) bes2( \! \mf g4)      | % 12
     fis( c') b4.( ees8)      | % 13
     cis4-. \downbow  d2.~\downbow       | % 14
     d8 r r4 r2      | % 15
     R1  | % 
-    r2 bes:32 \espressivo  ^\markup {\upright  "whip tremolo"} \pp      | % 17
+    r2 bes:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r c:32 \espressivo       | % 18
     r4 d:32 -.  dis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
@@ -47,8 +47,8 @@ AvoiceAA = \relative c'{
     <des ges>16-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.       | % 24
     \times 2/3{c8-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   }      | % 25
     \times 2/3{d-.  d-.  d-.   } \times 2/3{d-.  d-.  d-.   } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. }     | % 26
-    \times 2/3{c16( f dis~)  } dis8  dis2.\trill       | % 27
-    f16( d bes g) ees( c8.) gis'16( cis fis b e-.)  a8.~      | % 28
+    \times 2/3{c16( f dis~)  } dis8  dis2.\trill \<      | % 27
+    f16( \> d bes g) ees( \! c8.) gis'16( cis fis b e-.)  a8.~      | % 28
     a1 \<    \bar "||"      | % 29
     e,4 \ff cis gis e'      | % 30
     cis( b) b2  \breathe     | % 31
@@ -65,7 +65,7 @@ AvoiceAA = \relative c'{
     e4-.  e2 r4 \fermata    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72
     R1 *9  | % 
-    a2 \pp gis      | % 53
+    a2( \pp gis)      | % 53
     b4-.  b2. \bar "|."     | % 54
 }% end of last bar in partorvoice
 

@@ -47,11 +47,11 @@ AvoiceAA = \relative c'{
     ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  r r      | % 17
     des2. bes4( c8)      | % 18
     des4.( \f ges4.) ees4.      | % 19
-    des2.\espressivo  r4 r8      | % 20
-    f,-.  \< \p f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 21
-    bes-.  \! \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
-    c-.  \< \mf c-.  c-.  c-.  c-.  r \! r4.      | % 23
-    ges8-. \f \downbow ges-.(  ges-.)  ges4. ges4.      | % 24
+    des2.\espressivo  r4.      | % 20
+    f,8-.  \< \p f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 21
+    bes-.  \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
+    c8-.  \< \mf c-.  c-.  c-.  c-.  r \! r4.      | % 23
+    ges8-. \f \downbow ges-.(  ges-.)  ges4. \< ges4.      | % 24
     bes2. \ff r4.      | % 25
     c8-. \f \downbow c-.(  c-.)  ges'2.      | % 26
     R1*9/8   | % 27
@@ -136,7 +136,7 @@ AvoiceAA = \relative c'{
     d'-.  \< d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 106
     r8. \! c'16-.  \f b-.  d8.      | % 107
     c,16-.  \mf c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 108
-    b-.  d8. r4      | % 109
+    b-.  d8.~ d4 \<     | % 109
     d16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 110
     d-.  d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 111
     b'-.  cis8. r4      | % 112

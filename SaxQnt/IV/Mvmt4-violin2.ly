@@ -96,8 +96,8 @@ AvoiceAA = \relative c'{
     r8 a( \< \mf gis b) d( cis c dis)      | % 64
     e2 \! \f e4 e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
-    r8 d( cis e) g( fis f gis)      | % 67
-    a2 r8 c( dis b)      | % 68
+    r8 d( cis e) g( \< fis f gis)      | % 67
+    a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r dis,2 \mf      | % 69
     r8 dis-.  r dis-.  e4 e      | % 70
     r8 d'4-. ->  d8-.  f4( e)      | % 71
@@ -161,7 +161,7 @@ AvoiceAA = \relative c'{
     \tempo "Allegro" 4 = 132
     gis4 r      | % 131
     R2 *4  | % 
-    r4 bes8 \ff c16 d      | % 136
+    r4 bes8 \f \upbow c16 d      | % 136
     f4 d      | % 137
     bes8 d16 ees f4~      | % 138
     f ees8. d16      | % 139
@@ -182,16 +182,16 @@ AvoiceAA = \relative c'{
     f-.  a,~      | % 154
     a2      | % 155
     f'4-.  c      | % 156
-    a'8 g16 f ees8-.  d-.       | % 157
+    a'8 g16 f ees8-.(  d-.)       | % 157
     c4 c16( d ees8)      | % 158
     f4-.  a,~      | % 159
     a2      | % 160
     f'4-.  c~      | % 161
     c2      | % 162
-    a'8 g16 f ees8-.  d-.       | % 163
+    a'8 g16 f ees8-.(  d-.)       | % 163
     c4 a      | % 164
-    bes2~     | % 165
-    bes4 <bes d,>-.  \fz \bar "|." 
+    bes2~ \<    | % 165
+    bes4 \! <bes d,>-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 ApartA =  << 

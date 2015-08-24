@@ -42,7 +42,7 @@ AvoiceAA = \relative c'{
     d4. \< \p b4.( cis8)  d-.  ees-.       | % 11
     f4.( \! \mf d2.)      | % 12
     ees,8( \< \p f fis g gis a bes) g'-.  f-.       | % 13
-    ees \! \f r1      | % 14
+    ees \f r r r4. r4.     | % 14
     ees8( \< \p f fis g) r aes-.  bes-.  c-.  d-.       | % 15
     ees-.  \! \mf r r r4. r4.      | % 16
     ges,8( \< \p aes) f-.  g( ees) ges-.  d( f c)      | % 17
@@ -52,17 +52,16 @@ AvoiceAA = \relative c'{
     c,8 \< \p d dis e r r g( a b)      | % 21
     f( \< \mp fis g) d-.  d'-. r r e,( d)      | % 22
     g4. \mf r4. r4.      | % 23
-    f8( \< \p g gis a) ais-.  b-.  c \! \ff r4      | % 24
-    ees,2. \f r4.      | % 25
-    r4. e2.      | % 26
-    R1*9/8  | % 27
-    R1*9/8 \bar "||"    | % 28
+    f8( \< \p g gis a) ais-.  b-.  c \! r4      | % 24
+    ees,2. \ff r4.      | % 25
+    r4. e2. \f     | % 26
+    R1*9/8 *2 \bar "||"    | % 28
     %bartimesig: 
     \time 4/4 
     \tempo \markup { \concat { ( \smaller \general-align #Y #DOWN \note #"4." #1 " = " \smaller \general-align #Y #DOWN \note #"4" #1 ) } }
     R1 *2  | % 
     r2 r4 c'16( ^\markup {\italic "espressivo"} \pp d e g)      | % 31
-    fis4.\espressivo  r8 r4 r8 r      | % 32
+    fis2.\espressivo  r4      | % 32
     r2 r4 c16( \p d e g)      | % 33
     fis2.-- \espressivo  \< r8 g( \! \mp      | % 34
     fis4.\espressivo ) e8( d4.) \mf ees8(      | % 35
@@ -73,14 +72,13 @@ AvoiceAA = \relative c'{
     f4.) ees8( d4.) bes'8      | % 40
     f'1\espressivo ( \< \fp      | % 41
     f)       | % 42
-    %    \times 8/12{f32( \> \f e ees d des c b bes a aes g ges  } \times 8/12{f e ees d des c b bes a aes g ges  } fis4) \ppp r      | % 43
     f2 \> \f \glissando fis,,4 \ppp r      | % 43
     cis8.( \< \p d16 dis e f fis) \times 4/6{b16( \! \> \mp bes a aes g ges  } f8-. ) \! \p r      | % 44
     r2 b16( \mf c d) r r4      | % 45
     r c16( e d) a r4 c16( \mp d e) g      | % 46
     fis2.-- \espressivo  r8 g(      | % 47
     fis4.) ees8( d4) c16( d ees) fis      | % 48
-    b,8.( \> bes16 \times 4/6{a16 aes g ges f e)  } d8 \! \ppp r r4      | % 49
+    b,8.( \> bes16 \times 4/6{a16 aes g ges f e  } d8)  \ppp r r4      | % 49
     r \times 2/3{b'8( \p d f  } \times 2/3{e b a  } f8) r      | % 50
     r2 e8 \pp cis' r4      | % 51
     R1  | % 
@@ -121,10 +119,10 @@ AvoiceAA = \relative c'{
     g'( e c a g c a g)      | % 106
     a'( fis d b a d b a)      | % 107
     g'( e c a g a c d)      | % 108
-    a'( fis d b a d e f)      | % 109
-    g( \< e c a g c a g)      | % 110
-    a'( \> \! \f fis d b a d b a)      | % 111
-    g'( e c a gis) \! \p r r8      | % 112
+    a'( fis d b a \< d e f)      | % 109
+    g( \f \< e c a g c a g)      | % 110
+    a'( \>  fis d b a d b a)      | % 111
+    g'( e c a gis) \p r r8      | % 112
     cis16-. ->  \> \ff c( b bes a aes g fis) \! \pp \bar "|." 
 }% end of last bar in partorvoice
 

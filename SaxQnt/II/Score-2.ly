@@ -50,7 +50,7 @@ ATSaxvoiceAA = \relative c'{
     d4. \< \p b4.( cis8)  d-.  ees-.       | % 11
     f4.( \! \mf d2.)      | % 12
     ees,8( \< \p f fis g gis a bes) g'-.  f-.       | % 13
-    ees \! \f r1      | % 14
+    ees \f r r r4. r4.     | % 14
     ees8( \< \p f fis g) r aes-.  bes-.  c-.  d-.       | % 15
     ees-.  \! \mf r r r4. r4.      | % 16
     ges,8( \< \p aes) f-.  g( ees) ges-.  d( f c)      | % 17
@@ -60,17 +60,16 @@ ATSaxvoiceAA = \relative c'{
     c,8 \< \p d dis e r r g( a b)      | % 21
     f( \< \mp fis g) d-.  d'-. r r e,( d)      | % 22
     g4. \mf r4. r4.      | % 23
-    f8( \< \p g gis a) ais-.  b-.  c \! \ff r4      | % 24
-    ees,2. \f r4.      | % 25
-    r4. e2.      | % 26
-    R1*9/8  | % 27
-    R1*9/8 \bar "||"    | % 28
+    f8( \< \p g gis a) ais-.  b-.  c \! r4      | % 24
+    ees,2. \ff r4.      | % 25
+    r4. e2. \f     | % 26
+    R1*9/8 *2 \bar "||"    | % 28
     %bartimesig: 
     \time 4/4 
     \tempo \markup { \concat { ( \smaller \general-align #Y #DOWN \note #"4." #1 " = " \smaller \general-align #Y #DOWN \note #"4" #1 ) } }
     R1 *2  | % 
     r2 r4 c'16( ^\markup {\italic "espressivo"} \pp d e g)      | % 31
-    fis4.\espressivo  r8 r4 r8 r      | % 32
+    fis2.\espressivo  r4      | % 32
     r2 r4 c16( \p d e g)      | % 33
     fis2.-- \espressivo  \< r8 g( \! \mp      | % 34
     fis4.\espressivo ) e8( d4.) \mf ees8(      | % 35
@@ -87,7 +86,7 @@ ATSaxvoiceAA = \relative c'{
     r c16( e d) a r4 c16( \mp d e) g      | % 46
     fis2.-- \espressivo  r8 g(      | % 47
     fis4.) ees8( d4) c16( d ees) fis      | % 48
-    b,8.( \> bes16 \times 4/6{a16 aes g ges f e)  } d8 \! \ppp r r4      | % 49
+    b,8.( \> bes16 \times 4/6{a16 aes g ges f e  } d8)  \ppp r r4      | % 49
     r \times 2/3{b'8( \p d f  } \times 2/3{e b a  } f8) r      | % 50
     r2 e8 \pp cis' r4      | % 51
     R1  | % 
@@ -128,10 +127,10 @@ ATSaxvoiceAA = \relative c'{
     g'( e c a g c a g)      | % 106
     a'( fis d b a d b a)      | % 107
     g'( e c a g a c d)      | % 108
-    a'( fis d b a d e f)      | % 109
-    g( \< e c a g c a g)      | % 110
-    a'( \> \! \f fis d b a d b a)      | % 111
-    g'( e c a gis) \! \p r r8      | % 112
+    a'( fis d b a \< d e f)      | % 109
+    g( \f \< e c a g c a g)      | % 110
+    a'( \>  fis d b a d b a)      | % 111
+    g'( e c a gis) \p r r8      | % 112
     cis16-. ->  \> \ff c( b bes a aes g fis) \! \pp \bar "|." 
 }% end of last bar in partorvoice
 
@@ -165,11 +164,11 @@ AVlnvoiceBA = \relative c'{
     ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  r r      | % 17
     des2. bes4( c8)      | % 18
     des4.( \f ges4.) ees4.      | % 19
-    des2.\espressivo  r4 r8      | % 20
-    f,-.  \< \p f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 21
-    bes-.  \! \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
-    c-.  \< \mf c-.  c-.  c-.  c-.  r \! r4.      | % 23
-    ges8-. \f \downbow ges-.(  ges-.)  ges4. ges4.      | % 24
+    des2.\espressivo  r4.      | % 20
+    f,8-.  \< \p f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 21
+    bes-.  \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
+    c8-.  \< \mf c-.  c-.  c-.  c-.  r \! r4.      | % 23
+    ges8-. \f \downbow ges-.(  ges-.)  ges4. \< ges4.      | % 24
     bes2. \ff r4.      | % 25
     c8-. \f \downbow c-.(  c-.)  ges'2.      | % 26
     R1*9/8   | % 27
@@ -254,7 +253,7 @@ AVlnvoiceBA = \relative c'{
     d'-.  \< d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 106
     r8. \! c'16-.  \f b-.  d8.      | % 107
     c,16-.  \mf c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 108
-    b-.  d8. r4      | % 109
+    b-.  d8.~ d4 \<      | % 109
     d16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 110
     d-.  d-.  d-.  d-.  d-.  d-.  d-.  d-.       | % 111
     b'-.  cis8. r4      | % 112
@@ -278,7 +277,7 @@ AVlnvoiceCA = \relative c'{
     r4. des'8-.  ees-.  e-.  f-.  fis-.  g-.       | % 4
     aes4. r4. f8-.  bes,-.  e-.       | % 5
     gis,4. r4. f8-.  \mf bes-.  ees,-.       | % 6
-    r1 r8      | % 7
+    R1*9/8      | % 7
     r4. g8-.  bes-.  ges-.  aes-.  f-.  g-.       | % 8
     e4. r4. r4.      | % 9
     r4. b'8-.  \f r r f'-.  \< \p fis-.  g-.       | % 10
@@ -295,7 +294,7 @@ AVlnvoiceCA = \relative c'{
     des8-.  \< \p des-.  des-.  des-.  des-.  des-.  des-.  des-.  des-.       | % 21
     ees-.  \< \mp ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.  ees-.       | % 22
     f-.  \< \mf f-.  f-.  f-.  f-.  r \! r4.      | % 23
-    ees8-. \f \downbow ees-.(  ees-.)  ees4. ees4.      | % 24
+    ees8-. \f \downbow ees-.(  ees-.)  ees4. \< ees4.      | % 24
     f2. \ff r4.      | % 25
     a8-. \f \downbow a-.(  a-.)  c2.      | % 26
     R1*9/8   | % 27
@@ -382,7 +381,7 @@ AVlnvoiceCA = \relative c'{
     R2  | % 
     r8. c'16-.  \f b-.  d8.      | % 107
     f,16( \mf d bes g) f'( g bes c)      | % 108
-    c-.  c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 109
+    c-.  c-.  c-.  c-.  c-. \< c-.  c-.  c-.       | % 109
     c-.  \f c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 110
     c-.  c-.  c-.  c-.  c-.  c-.  c-.  c-.       | % 111
     b-.  cis8. fis,16:32 \< \p f: e: ees:    | % 112
@@ -412,7 +411,7 @@ AVlavoiceDA = \relative c'{
     R1*9/8      | % 10
     aes'8-.  \mf r r des,-.  r r f-.  r r      | % 11
     aes,-.  bes-.  c-.  des-.  r r f( \< ^\markup {\upright  "arco"} \p \downbow fis g)      | % 12
-    aes-.  bes-.  c-.  des-.  \! \f r r2      | % 13
+    aes-.  bes-.  c-.  des-.  \f r r r4.     | % 13
     des,,2.( \< \p \upbow aes'4.)      | % 14
     ges4.( \mf ees4. des4.)      | % 15
     c4. des4( fes8) ees4.      | % 16
@@ -423,8 +422,8 @@ AVlavoiceDA = \relative c'{
     bes8-.  \< \p bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 21
     bes-.  \< \mp bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.  bes-.       | % 22
     a4.( \< \mf bes4.) r4.\!      | % 23
-    bes8-. \f \downbow bes-.(  bes-.)  bes4. bes      | % 24
-    bes2. \ff r4 r8      | % 25
+    bes8-. \f \downbow bes-.(  bes-.)  bes4. \< bes      | % 24
+    bes2. \ff r4.      | % 25
     ees8-. \f \downbow ees-.(  ees-.)  d2.      | % 26
     R1*9/8  | % 27
     R1*9/8 \bar "||"     | % 28
@@ -491,7 +490,7 @@ AVlavoiceDA = \relative c'{
     d,-.  \p d-.  d-.  d-.       | % 85
     d-.  d-.  d-.  d-.       | % 86
     d-.  \< d-.  d-.  d-.       | % 87
-    d-.  d-.  d-.  d-.  \! \f      | % 88
+    d-.  d-.  d16-. d-. d-. d-. \!      | % 88
     R2  | % 
     b''16-.  \f b-.  b-.  b-.  b-.  b-.  b-.  b-.       | % 90
     b-.  b-.  b-.  b-.  b-.  b-.  b-.  b-.       | % 91
@@ -507,12 +506,12 @@ AVlavoiceDA = \relative c'{
     des,8-.  \> \f des-.  des-.  des-.       | % 101
     des-.  des-.  des-.  des-.       | % 102
     des-.  \! \< \p des-.  des-.  des-.       | % 103
-    des-.  des-.  des-.  des-.  \! \ff      | % 104
+    des-.  des-.  des16-. des-. des-. des-. \ff      | % 104
     R2  | % 
     f'16( \< \mf d bes g) f( bes g f)      | % 106
     <g g'>-. \ff d'-. \< \p d-.  d-.  d-.  d-.  d-.  d-.       | % 107
     f-. \mf  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 108
-    f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 109
+    f-.  f-.  f-.  f-.  f-. \< f-.  f-.  f-.       | % 109
     f-.  \f f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 110
     f-.  f-.  f-.  f-.  f-.  f-.  f-.  f-.       | % 111
     b16-. cis8. ees,16:32 \< \p d: des: c:      | % 112
@@ -553,7 +552,7 @@ AVlcvoiceEA = \relative c{
     bes,8-.  \< \p bes-.  bes-. d-.  d-.  d-. f( ges f)      | % 21
     ees4. \mp r4. c'8-.  bes-.  aes-.       | % 22
     bes-.  bes-.  bes-.  bes,4 \< \p b8--  c--  cis--  d--       | % 23
-    ees-. \f \downbow ees-.(  ees-.)  ees,4. ees'4.      | % 24
+    ees-. \f \downbow ees-.(  ees-.)  ees,4. \< ees'4.      | % 24
     des2. \ff r4.      | % 25
     c8-. \f \downbow c-.(  c-.)  d4. d,      | % 26
     r a' ^\markup {\upright  "pizz."} \mf \> g      | % 27
@@ -567,10 +566,10 @@ AVlcvoiceEA = \relative c{
     r4 r8 a ^\markup {\upright  "col legno"} \p r2      | % 37
     R1 *3  | % 
     c,,2:32 \espressivo  ^\markup {\upright  "arco"} r      | % 41
-    r8 a'' ^\markup {\upright  "col legno"} r4 r2      | % 42
+    r8 a'' \p ^\markup {\upright  "col legno"} r4 r2      | % 42
     e,8-.  \sfz ^\markup {\upright  "arco"} r r4 r2      | % 43
     R1  | % 
-    r8 a'16-.  ^\markup {\upright  "col legno"} a-.  r4 r2      | % 45
+    r8 a'16-. \p ^\markup {\upright  "col legno"} a-.  r4 r2      | % 45
     R1 *4  | % 
     r4 r8 a ^\markup {\upright  "col legno"} r2      | % 50
     R1 *2  | % 
@@ -617,13 +616,13 @@ AVlcvoiceEA = \relative c{
     f-. \ff f-. \mf f-.  f-.       | % 97
     f-.  f-.  f-.  f-.       | % 98
     f-.  \< \p f-.  f-.  f-.       | % 99
-    f-.  f-.  f-.  f-.  \! \f      | % 100
+    f16-.  f-. f-. f-. f-. f-. f-. f-.  \!      | % 100
     R2 *4  | % 
     d8-.  \mf d-.  d-.  d-.       | % 105
     d-.  d-.  d-.  d-.       | % 106
     g''16( e c a) g( c a g)      | % 107
     d,8-.  d-.  d-.  d-.       | % 108
-    e-.  e-.  e-.  e-.       | % 109
+    e-.  e-.  e16-. \< e-. e-. e-.       | % 109
     e16-.  \f e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 110
     e-.  e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 111
     e'-.  \< e-.  e-.  e-.  f-.  f-.  f-.  f-.     | % 112

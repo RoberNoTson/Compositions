@@ -47,13 +47,13 @@ ATSaxvoiceAA = \relative c'{
     f'2. \> r4 \!      | % 8
     fis( \p d e-. ) ees~ \>      | % 9
     ees1~      | % 10
-    ees8 \! \pp r r4 r2      | % 11
+    ees8 \! r r4 r2      | % 11
     R1 *3  | % 
     ais,4-.  \pp ais2.      | % 15
     eis2( fis)      | % 16
-    r4 gis' \p g8\(( e') ees4\)      | % 17
-    r8 d f,( fis) c4( cis)      | % 18
-    a'2. r4 \fermata \breathe    \bar "||"      | % 19
+    r4 gis' \p \fermata \< g8\(( \! e') ees4\)      | % 17
+    r8 d f,( fis) c4( \> cis)      | % 18
+    a'2. \! r4 \fermata \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
     r b,2( \f \> gis4)      | % 20
     fis2( \mf d'4) r      | % 21
@@ -106,7 +106,7 @@ AVlnvoiceBA = \relative c'{
     R1 *3  | % 
     g4-. \downbow  \pp g2.\downbow       | % 15
     a2( f)      | % 16
-    r a:32 \espressivo  ^\markup {\upright  "whip tremolo"} \pp      | % 17
+    r4 r \fermata a2:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r b:32 \espressivo       | % 18
     r4 cis:32 -.  g2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
@@ -117,7 +117,7 @@ AVlnvoiceBA = \relative c'{
     b( d g, bes) ees( b) b( e)      | % 24
     e,( g b d) fis( a) c4      | % 25
     aes,,8( ees') bes'( f) c'( f) c'4      | % 26
-    g2 d'      | % 27
+    g2 d' \espressivo      | % 27
     cis16( gis dis ais') f( c e g) b8( d) fis-.  a~        | % 28
     a1 \<  \bar "||"      | % 29
     a,4 \! \ff a e8( fis) gis4      | % 30
@@ -156,7 +156,7 @@ AVlnvoiceCA = \relative c'{
     R1 *3  | % 
     fis4-. \downbow  \pp fis2.\downbow       | % 15
     d2( cis)      | % 16
-    r aes':32 \espressivo  ^\markup {\upright  "whip tremolo"} \pp      | % 17
+    r4 r \fermata aes'2:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r f:32 \espressivo       | % 18
     r4 e:32 -.  fis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
@@ -167,7 +167,7 @@ AVlnvoiceCA = \relative c'{
     <ees aes>1\espressivo       | % 24
     f      | % 25
     a4.( f8) \times 2/3{c'4 f c  }      | % 26
-    g'4 r8 r <a, e'>( gis'~ gis) b16( dis,)      | % 27
+    g'4 r8 r <a, e'>( gis'~ \espressivo gis) b16( dis,)      | % 27
     r8. <ais fis'>16-.  <ais fis'>-.  <ais fis'>-.  <ais fis'>-.  <ais fis'>-.  cis-.  cis-.  cis8~ cis4      | % 28
     <a d\harmonic>1 \open  \<    \bar "||"      | % 29
     a4 \ff a e8( fis) gis4      | % 30
@@ -202,14 +202,14 @@ AVlavoiceDA = \relative c'{
     \time 4/4 
     \tempo "Adagio" 4 = 72  
     R1 *9  | % 
-    ais2 \pp a      | % 10
+    ais2( \pp a)      | % 10
     c2. r4      | % 11
     ees,16( \< \p ^\markup { "sul C" } f gis a) bes2( \! \mf g4)      | % 12
     fis( c') b4.( ees8)      | % 13
     cis4-. \downbow  d2.~\downbow       | % 14
     d8 r r4 r2      | % 15
     R1  | % 
-    r2 bes:32 \espressivo  ^\markup {\upright  "whip tremolo"} \pp      | % 17
+    r4 r \fermata bes2:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r c:32 \espressivo       | % 18
     r4 d:32 -.  dis2:32 \espressivo \fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
@@ -220,8 +220,8 @@ AVlavoiceDA = \relative c'{
     <des ges>16-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.       | % 24
     \times 2/3{c8-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   }      | % 25
     \times 2/3{d-.  d-.  d-.   } \times 2/3{d-.  d-.  d-.   } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. }     | % 26
-    \times 2/3{c16( f dis~)  } dis8  dis2.\trill       | % 27
-    f16( d bes g) ees( c8.) gis'16( cis fis b e-.)  a8.~      | % 28
+    \times 2/3{c16( f dis~)  } dis8  dis2.\trill \<      | % 27
+    f16( \> d bes g) ees( \! c8.) gis'16( cis fis b e-.)  a8.~      | % 28
     a1 \<    \bar "||"      | % 29
     e,4 \! \ff cis gis e'      | % 30
     cis( b) b2  \breathe     | % 31
@@ -238,7 +238,7 @@ AVlavoiceDA = \relative c'{
     e4-.  e2 r4 \fermata    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72
     R1 *9  | % 
-    a2 \pp gis      | % 53
+    a2( \pp gis)      | % 53
     b4-.  b2. \bar "|."     | % 54
 }% end of last bar in partorvoice
 
@@ -259,7 +259,8 @@ AVlcvoiceEA = \relative c{
     R1 *3  | % 
     ais,4-. \downbow  \pp ais2.\downbow       | % 15
     b2( c) \!      | % 16
-    R1 *2  | % 
+    r4 r \fermata r2 | %
+    R1  | % 
     r4 a ^\markup {\upright  "pizz."} \p aes2\fermata  \breathe    \bar "||"      | % 19
     \tempo "Andante" 4 = 96
     r r4 fis'~ ^\markup {\upright  "arco"} \f      | % 20
@@ -275,8 +276,8 @@ AVlcvoiceEA = \relative c{
     cis,,4 \! \ff a e' cis      | % 30
     fis,( b) e2  \breathe     | % 31
     bes4. \mf bes8-.  bes4. bes8-.       | % 32
-    b4. b8-.  b4. b8-.       | % 33
-    d4. d8-.  dis4. dis8-.       | % 34
+    b4. \< b8-.  b4. b8-.       | % 33
+    d4. \> d8-.  dis4. \! dis8-.       | % 34
     e4. \< e8-.  e4. e8-.       | % 35
     cis-. \f cis-.  \p cis-.  cis-.  cis-.  cis-.  cis-.  cis-.       | % 36
     c-.  c-.  c-.  c-.  fis-.  \< fis-.  fis-.  fis-.       | % 37

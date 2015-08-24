@@ -86,8 +86,8 @@ AvoiceAA = \relative c'{
     \tempo "poco meno mosso" 4 = 112
     r8 d-.  \mf r d-.  d4 d      | % 62
     r8 d-.  r d-.  d4 d      | % 63
-    d8->  r r4 fis,2      | % 64
-    r8 d'-.  \f r d-.  d4 d      | % 65
+    d8->  r r4 fis,2 \<     | % 64
+    r8 d'-. \f r d-.  d4 d      | % 65
     r8 d-.  r d-.  bes4 bes      | % 66
     R1  | % 
     r8 e,-.  r e-.  fis4 ais      | % 68
@@ -180,8 +180,8 @@ AvoiceAA = \relative c'{
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 162
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 163
     b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 164
-    b8-.  b16-.  b-.  b8-.  b16-.  b-.       | % 165
-    d16-.  d-.  d-.  d-.  c4-.  \fz \bar "|." 
+    b8-. \< b16-.  b-.  b8-.  b16-.  b-.       | % 165
+    d16-. \!  d-.  d-.  d-.  c4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 ApartA =  << 

@@ -88,22 +88,22 @@ AvoiceAA = \relative c{
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
     f,-.  f-.  f-.  f-.  f-.  r r8      | % 59
     r f16-.  f-.  f-.  f-.  r a,-.       | % 60
-    b8-.  r r4 \bar "||"     | % 61
+    b8-.  r f16( \mf \< fis g gis) \bar "||"     | % 61
     %bartimesig: 
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     a4.->  \f r8 e'4.->  r8      | % 62
-    a,4.->  r8 e4.->  r8      | % 63
-    a->  r r4 e'2      | % 64
-    a,4.->  r8 a4.-> -.  a8-.       | % 65
+    a,4.-> \> r8 e4.->  r8      | % 63
+    a-> \mf r r4 e'2 \<     | % 64
+    a,4.-> \f r8 a4.-> -.  a8-.       | % 65
     a4.->  r8 b4.-> -.  b8-.       | % 66
     bes4->  r e2      | % 67
     a,4.->  r8 c4.-> -.  b8-.       | % 68
     ais4-> -.  f'8--  \mf fis--  dis( c) cis( d)      | % 69
-    \times 2/3{b'4 ais g  } \times 2/3{e gis a  }      | % 70
-    d,2->  r      | % 71
-    gis4-.  e'8( f) e( dis) b( c)      | % 72
-    d,2->  r      | % 73
+    \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
+    d,2-> \! d4 (e16 f fis g)      | % 71
+    gis4-. e'8( \f f) e( dis) b( c)      | % 72
+    d,2-> \>  r \!     | % 73
     a8-.  e'( \< dis fis) a( gis g ais)      | % 74
     e,4.->  \! \f r8 e4.-> -.  e8-.       | % 75
     e4.->  r8 fis4.-> -.  fis8-.       | % 76
@@ -137,9 +137,9 @@ AvoiceAA = \relative c{
     cis-.  g-.  c-.  g-.       | % 100
     b-.  g-.  ais-.  fis-.       | % 101
     ees2 \ff      | % 102
-    d \f      | % 103
+    d \>      | % 103
     c      | % 104
-    e2~    \bar "||"      | % 105
+    e2~ \mp   \bar "||"      | % 105
     %barkeysig: 
     \key a \major 
     \tempo "Moderato semplice" 4 = 92  
@@ -204,8 +204,8 @@ AvoiceAA = \relative c{
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 162
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 163
     fis8-.  fis16-.  fis-.  fis8-.  fis16-.  fis-.       | % 164
-    f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 165
-    f16-.  f-.  f-.  f-.  bes4-.  \fz \bar "|." 
+    f8-. \<  f16-.  f-.  f8-.  f16-.  f-.       | % 165
+    f16-. \!  f-.  f-.  f-.  bes4-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 ApartA =  << 

@@ -98,8 +98,8 @@ AvoiceAB = \relative c'{
     r8 a'( \< \mf gis b) d( cis c dis)      | % 64
     e2 \! \f e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
-    r8 d( cis e) g( fis f gis)      | % 67
-    a2 r8 c( dis b)      | % 68
+    r8 d( cis e) g( \< fis f gis)      | % 67
+    a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r fis,2 \mf      | % 69
     r8 fis-.  r fis-.  e4 e      | % 70
     r8 d'4-. ->  d8-.  f4( e)      | % 71
@@ -179,7 +179,7 @@ AvoiceAB = \relative c'{
     \tempo "Allegro" 4 = 132
     e4 r      | % 131
     R2 *4  | % 
-    r4 bes8 \ff c16 d      | % 136
+    r4 bes8 \f \upbow c16 d      | % 136
     f4 d      | % 137
     bes8 d16 ees f4~      | % 138
     f ees8. d16      | % 139
@@ -200,16 +200,16 @@ AvoiceAB = \relative c'{
     f-.  d~      | % 154
     d2      | % 155
     f4-.  ees      | % 156
-    a8 g16 f ees8-.  d-.       | % 157
+    a8 g16 f ees8-.(  d-.)       | % 157
     c4 c16( d ees8)      | % 158
     f4-.  d~      | % 159
     d2      | % 160
     f4-.  ees~      | % 161
     ees2      | % 162
-    a8 g16 f ees8-.  d-.       | % 163
+    a8 g16 f ees8-.(  d-.)       | % 163
     c4 a      | % 164
-    bes2~     | % 165
-    bes4 <bes bes'>-.  \fz \bar "|." 
+    bes2~ \<    | % 165
+    bes4 \! <bes bes'>-.  \fz \bar "|." 
 }% end of last bar in partorvoice
 
 AvoiceAA = \relative c'{
@@ -223,14 +223,14 @@ AvoiceAA = \relative c'{
     \time 2/4
     s2 *21
     \override Fingering #'direction = #UP
-    s4 \stemUp e'-0	| %
+    s4 \stemUp e'^0	| %
     \time 3/4
     e2.    | %
     e2.      | % 
     e2.      | % 
-    e2 e8~-4 e-0      | % 
+    e2 e8~^4 e^0      | % 
     e2.      | % 
-    e2 \stemDown \override Fingering #'direction = #DOWN a,4-0     | % 
+    e2 \stemDown \override Fingering #'direction = #DOWN a,4_0     | % 
     a \stemUp e' e8 e~      | % 
     e2.      | % 
     s2. *7
