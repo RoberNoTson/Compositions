@@ -120,7 +120,7 @@ ATSaxvoiceAA = \relative c'{
     b,16-.  e-.  d-.  fis-.  r4 cis8-.  fis16-.  fis-.  g8-.  r      | % 41
     %bartimesig: 
     \time 3/4 
-    \grace{\stemUp b,16(  [ e, a,  ]  } \stemNeutral d,8) r r4 ais'16-.  e'-.  cis-.  fis-.       | % 42
+    \grace {\stemUp b,16(  [ e, a, ] } \stemNeutral d,8) r r4 ais'16-.  e'-.  cis-.  fis-.       | % 42
     %bartimesig: 
     \time 4/4 
     c16-.  f-.  dis-.  g-.  r4 d'8-.  g16-.  g-.  gis8-.  r      | % 43
@@ -156,14 +156,14 @@ ATSaxvoiceAA = \relative c'{
     d16-.  d-.  d8 r16 d-.  d8 r16 d,-.  d8 d16->  d-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    r2 ^\markup {\upright  "rallentando al ..."} r4     \bar "||"      | % 54
+    r2. ^\markup {\upright  "rallentando al ..."}      \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
     gis8-.  \mf r r4 r2     | % 55
     r2 r4 b,8-> \downbow  \< cis-.       | % 56
-    f1 \! \f      | % 57
-    f2->  r      | % 58
+    f2-> \f r      | % 57
+    f1 \mf     | % 58
     R1  | % 
     bes,,1~ \p      | % 60
     bes~      | % 61
@@ -258,6 +258,7 @@ AVlnvoiceBA = \relative c'{
     r4 g,16-.  cis-.  ais-.  d-.  a-.  dis-.  b-.  f'-.  <a, f'>8-.  r      | % 41
     %bartimesig: 
     \time 3/4 
+    \grace { s16 s s } 
     r8 \arpeggioArrowDown <g, d' a' e'>\arpeggio ->  ^\markup {\upright  "pizz."} r4 f''8-> ( ^\markup {\upright  "arco"} g-. )      | % 42
     %bartimesig: 
     \time 4/4 
@@ -300,8 +301,8 @@ AVlnvoiceBA = \relative c'{
     \tempo "Tempo I" 4 = 96  
     fis'4 \mf r r2      | % 55
     r2 r4 r      | % 56
-    <ees' c'>1 \f      | % 57
-    <ees c'>2->  r      | % 58
+    <ees' c'>2-> \f r      | % 57
+    <ees c'>1 \mf     | % 58
     R1 *5  | % 
     <d, fis>1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
     <d fis>2.) \! \bar "|." 
@@ -392,6 +393,7 @@ AVlnvoiceCA = \relative c'{
     r4 \arpeggioArrowDown <g, d' a' e'>8\arpeggio ->  ^\markup {\upright  "pizz."} r r <dis' c'>16-.  ^\markup {\upright  "arco"} <dis c'>-.  <dis c'>-.  <dis c'>-.  <dis c'>-.  <dis c'>-.       | % 41
     %bartimesig: 
     \time 3/4 
+    \grace { s16 s s } 
     <e c'>16-. ->  <e c'>-.  r8 r gis16-.  gis-.  cis-.  c-.  r8      | % 42
     %bartimesig: 
     \time 4/4 
@@ -434,8 +436,8 @@ AVlnvoiceCA = \relative c'{
     \tempo "Tempo I" 4 = 96  
     fis'2 \mf r      | % 55
     r2 r4 r      | % 56
-    <g c>1 \f      | % 57
-    <g c>2->  r      | % 58
+    <g c>2-> \f r      | % 57
+    <g c>1 \mf      | % 58
     R1 *5  | % 
     <ees c'>1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
     <ees c'>2.) \! \bar "|." 
@@ -526,6 +528,7 @@ AVlavoiceDA = \relative c'{
     \arpeggioArrowDown <c, g' d' a'>8\arpeggio ->  ^\markup {\upright  "pizz."} r r4 gis':32  ^\markup {\upright  "arco"} g8-. ->  g-. ->       | % 41
     %bartimesig: 
     \time 3/4 
+    \grace { s16 s s } 
     g8 a16-. ( a-. ) \times 4/6{gis16( a gis a gis a)  } r4      | % 42
     %bartimesig: 
     \time 4/4 
@@ -568,9 +571,9 @@ AVlavoiceDA = \relative c'{
     \tempo "Tempo I" 4 = 96  
     fis1~\espressivo  \mf ^\markup {\upright  "arco"}      | % 55
     fis2. \mp r4      | % 56
-    <fis, d'>2->  \f r      | % 57
-    <fis d'>1 \>      | % 58
-    r2 \! r4 bes ^\snappizzicato \mf      | % 59
+    <fis, d'>1-> \f     | % 57
+    <fis d'>2  r      | % 58
+    r2 r4 bes ^\snappizzicato \mf      | % 59
     R1 *4  | % 
     <c g'-0 >1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
     <c g'>2.) \! \bar "|." 
@@ -607,9 +610,9 @@ AVlcvoiceEA = \relative c{
     g,( a) d8-.  r g4->       | % 14
     e2 d8->  \mf c-.  a4      | % 15
     bes16-> \< bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
-    b'8( c)  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
-    c(  d)  g,-.  c-.  g4  f'8-> ( e)      | % 18
-    c( d) g,-.  d'-.  a( b) d4      | % 19
+    b'8( c)  g-.(  f-.)  e4  b8-.(  b-.)       | % 17
+    c(  d)  g,-.(  c-.)  g4  f'8-> ( e)      | % 18
+    c( d) g,-.(  d'-.)  a( b) d( c)      | % 19
     e8( d) g,-.  g'-.  g,4-.  d'8-.  d-.       | % 20
     g,-.  g'-.  g,-.  f'-.  d-.  r f4->       | % 21
     g8-. \upbow  a16-. \downbow ( g-.  f8-. ) e-.  b'-.  r r4      | % 22
@@ -661,6 +664,7 @@ AVlcvoiceEA = \relative c{
     r8 f,-.  ^\snappizzicato r4 dis'16-. ->  ^\markup {\upright  "arco"} fis-.  r8 f,4:32 ->       | % 41
     %bartimesig: 
     \time 3/4 
+    \grace { s16 s s } 
     c4-.  r16 b'-.  b-.  b-.  b8 c16-. -> ( dis-. )      | % 42
     %bartimesig: 
     \time 4/4 
@@ -703,9 +707,9 @@ AVlcvoiceEA = \relative c{
     \tempo "Tempo I" 4 = 96  
     fis1 \mf      | % 55
     r2 r4 r      | % 56
-    <d a'>2->  \f r      | % 57
-    <d a'>1 \>      | % 58
-    r4 \! a8-. \mf a4.\espressivo  r4      | % 59
+    <d a'>1  \f    | % 57
+    <d a'>2->   r      | % 58
+    r4 a8-. \mf  a4.\espressivo  r4      | % 59
     gis\espressivo  \p r a\espressivo  r      | % 60
     gis\espressivo  r a\espressivo  r      | % 61
     r a\espressivo  r r      | % 62

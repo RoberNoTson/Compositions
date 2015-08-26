@@ -80,9 +80,9 @@ AvoiceAA = \relative c'{
     \times 2/3{g8( a cis)  } \times 2/3{b( a g)  }      | % 50
     g4--  fis16-.  fis8.-.       | % 51
     gis4-- ( fis-- )      | % 52
-    e e16-. \>  e8.-.       | % 53
+    e \> e16-.  e8.-.       | % 53
     dis4 dis16-.  dis8.-.       | % 54
-    e4 \! e16-. \< e8.-.       | % 55
+    e4 \< e16-. e8.-.       | % 55
     e8 \! r r4      | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  e,-.  e-.  e-.  r      | % 58
@@ -99,17 +99,17 @@ AvoiceAA = \relative c'{
     r8 e-.  r e-.  d4 d      | % 66
     R1  | % 
     r8 g,-.  r g-.  a4 gis      | % 68
-    dis'-> -.  f8--  \mf fis--  dis( c) cis( d)      | % 69
+    dis'-> -.  f8-- \mf \downbow fis--  dis( c) cis( d)      | % 69
     \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
-    d,2-> \!  d      | % 71
-    e4-.  e8( \f f) e( dis) b( c)      | % 72
-    d2-> \> r \!      | % 73
-    c8-.  e( \< dis fis) a( gis g ais)      | % 74
+    d,2-> \!  d \<     | % 71
+    e4-. \f e8( f) e( \> dis) b( c)      | % 72
+    d2-> \mf r       | % 73
+    c8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
     r \! b,-.  \f r b-.  b4 b      | % 75
     r8 b-.  r b-.  a4 a      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
-    r d,-.  r d-.  e4 dis'      | % 78
-    ais-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    r d,-.  r d-.  e4( dis')      | % 78
+    ais-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     c2. r4      | % 81
     %bartimesig: 
@@ -130,11 +130,12 @@ AvoiceAA = \relative c'{
     R2  | % 
     r4 r8 \fermata g'16-.  \f g-.       | % 94
     fis( g) g-.  g-.  fis( g) g-.  g-.       | % 95
-    e8-.  d-.  r d16-.  d-.       | % 96
-    cis( b) b-.  b-.  cis( b) b-.  b-.       | % 97
-    b8-.  g-.  r e'16-.  e-.       | % 98
-    dis( e) e-.  e-.  dis( e) e-.  e-.       | % 99
-    d8-.  cis-.  r c16-.  c-.       | % 100
+    
+    e8 \grace{cis'( } d-.) \grace{cis( } d-.) \grace{cis( } d-.)  | % 96
+    r16 e,-. g-. b-. a( g) e-. d-.  | % 97
+    b8 \grace{d'( } e-.) \grace{d( } e-.) r | % 98
+    dis,16( e) gis-.  a-.  b( g) fis-.  e-.       | % 99
+    gis8-.  b,-.  r c16-.  c-.       | % 100
     g'( fis) f-.  e-.  dis8-.  cis-.       | % 101
     b r r4      | % 102
     R2 *3    \bar "||"     | %

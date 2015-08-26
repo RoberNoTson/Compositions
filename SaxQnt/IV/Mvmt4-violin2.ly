@@ -80,9 +80,9 @@ AvoiceAA = \relative c'{
     \times 2/3{b( cis dis)  } \times 2/3{f( dis cis)  }      | % 50
     a4--  a16-.  a8.-.       | % 51
     gis4-- ( a-- )      | % 52
-    a a16-.  a8.-. \>      | % 53
+    a \> a16-.  a8.-.      | % 53
     a4 a16-.  a8.-.       | % 54
-    a4 a16-. \<  a8.-.       | % 55
+    a4 \< a16-.  a8.-.       | % 55
     a8 \! r r4      | % 56
     e'16-.  \f e-.  e-.  e-.  e-.  e-.  g-.  r      | % 57
     r g-.  g-.  g-.  d-.  d-.  d-.  r      | % 58
@@ -93,22 +93,22 @@ AvoiceAA = \relative c'{
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     R1 *2  | % 
-    r8 a( \< \mf gis b) d( cis c dis)      | % 64
+    r8 a( \< \mf \downbow gis b) d( cis c dis)      | % 64
     e2 \! \f e4 e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
     r8 d( cis e) g( \< fis f gis)      | % 67
     a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r dis,2 \mf      | % 69
     r8 dis-.  r dis-.  e4 e      | % 70
-    r8 d'4-. ->  d8-.  f4( e)      | % 71
-    gis,-.  r r2      | % 72
-    r8 d'4-. ->  d8-.  f4( e)      | % 73
-    e,8-.  e( \< dis fis) a( gis g ais)      | % 74
+    r8 d'4-. ->  d8-.  f4( \< e)      | % 71
+    gis,-. \f r r2      | % 72
+    r8 d'4-. -> \mf d8-.  f4( e)      | % 73
+    e,8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
     b2 \! \f b4 e,      | % 75
     \times 2/3{d4 f cis  } c2      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
     e2 \times 2/3{g4 ais fis  }      | % 78
-    f4-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    f4-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     e2. r4      | % 81
     %bartimesig: 

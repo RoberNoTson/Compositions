@@ -90,17 +90,17 @@ AvoiceAA = \relative c'{
     r8 d'-. \f r d-.  d4 d      | % 65
     r8 d-.  r d-.  bes4 bes      | % 66
     R1  | % 
-    r8 e,-.  r e-.  fis4 ais      | % 68
+    r8 e,-.  r e-.  fis4( ais)      | % 68
     gis-> -.  r c,2 \mf      | % 69
     r8 cis-.  r cis-.  cis4 cis      | % 70
-    r8 e'4-. ->  e8-.  g4( fis)      | % 71
-    cis-.  r r2      | % 72
-    r8 e4-. ->  e8-.  g4( fis)      | % 73
+    r8 e'4-. ->  e8-.  g( \< g,) fis16( g gis ais)     | % 71
+    cis4-. \f r r2      | % 72
+    r8 e4-. -> \mf  e8-.  g4( fis)      | % 73
     b,8-.  fis'( \< eis gis) b( ais a bis)      | % 74
     r \! a,-.  \f r a-.  a4 a      | % 75
     r8 a-.  r a-.  f4 f      | % 76
     g8->  r r4 r2      | % 77
-    r8 b,-.  r b-.  cis4->  f      | % 78
+    r8 b,-.  r b-.  cis4->(  f)      | % 78
     dis-> -.  r c fis      | % 79
     r8 ais-.  r ais-.  b4-.  b-.       | % 80
     R1  | % 

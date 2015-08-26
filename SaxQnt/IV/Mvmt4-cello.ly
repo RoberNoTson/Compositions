@@ -59,7 +59,7 @@ AvoiceAA = \relative c{
     r4 f16( \< \p g gis b)      | % 29
     e2~      | % 30
     e      | % 31
-    \times 2/3{gis8( \f fis \> e)  } \times 2/3{d( e fis)  }      | % 32
+    \times 2/3{gis8--( \f fis \> e)  } \times 2/3{d( e fis)  }      | % 32
     \times 2/3{gis( fis \< e)  } \times 2/3{d( e fis)  }      | % 33
     a4-> \! gis~ \>      | % 34
     gis2      | % 35
@@ -82,7 +82,7 @@ AvoiceAA = \relative c{
     b4-- ( d,-- )      | % 52
     e2 \>     | % 53
     fis4 fis16-.  fis8.-.       | % 54
-    a,8-. \!  a-.  a16-. \< a8.-.       | % 55
+    a,8-. \<  a-.  a16-.  a8.-.       | % 55
     a8-.  r d-.  d-.       | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
@@ -99,17 +99,17 @@ AvoiceAA = \relative c{
     a4.->  r8 b4.-> -.  b8-.       | % 66
     bes4->  r e2      | % 67
     a,4.->  r8 c4.-> -.  b8-.       | % 68
-    ais4-> -.  f'8--  \mf fis--  dis( c) cis( d)      | % 69
+    ais4-> -.  f'8-- \mf \downbow fis--  dis( c) cis( d)      | % 69
     \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
-    d,2-> \! d4 (e16 f fis g)      | % 71
-    gis4-. e'8( \f f) e( dis) b( c)      | % 72
-    d,2-> \>  r \!     | % 73
-    a8-.  e'( \< dis fis) a( gis g ais)      | % 74
+    d,2-> \! d4( \< e16 f fis g)      | % 71
+    gis4-. \f e'8( f) e( \> dis) b( c)      | % 72
+    d,2-> \mf  r      | % 73
+    a8-. \downbow e'( \< \downbow dis fis) a( gis g ais)      | % 74
     e,4.->  \! \f r8 e4.-> -.  e8-.       | % 75
     e4.->  r8 fis4.-> -.  fis8-.       | % 76
     f->  r r4 b2      | % 77
-    e,4.->  r8 g4->  fis      | % 78
-    f-> -.  r cis' cis      | % 79
+    e,4.->  r8 g4->(  fis)      | % 78
+    f?-> -.  r cis' cis      | % 79
     r8 fis-.  r fis-.  fis4-.  fis-.       | % 80
     R1  | % 
     %bartimesig: 

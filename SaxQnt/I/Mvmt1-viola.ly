@@ -148,9 +148,9 @@ AvoiceAA = \relative c'{
     \tempo "Tempo I" 4 = 96  
     fis1~\espressivo  \f ^\markup {\upright  "arco"}      | % 55
     fis2. \mp r4      | % 56
-    <fis, d'>2->  \f r      | % 57
-    <fis d'>1 \>      | % 58
-    r2 \! r4 bes ^\snappizzicato \mf      | % 59
+    <fis, d'>1-> \f     | % 57
+    <fis d'>2  r      | % 58
+    r2 r4 bes ^\snappizzicato \mf      | % 59
     R1 *4  | % 
     <c g'-0 >1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
     <c g'>2.) \! \bar "|." 

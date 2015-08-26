@@ -71,8 +71,8 @@ ATSaxvoiceAA = \relative c'{
     dis,16( \< \p ais' f c' g d' fis a, cis e gis b) \mf r4      | % 36
     R1 *2  | % 
     r2 r4 bes,16( \mf g ees c')      | % 39
-    aes( f des8) r fis' b,16( e) a,( d) r4      | % 40
-    d16( \< a e' b) fis'8( cis) f,16( \! \f aes c ees) g-.  bes8.      | % 41
+    aes( f des8) r fis' \f b,16( e) a,( d) r4      | % 40
+    d16( \mf \< a e' b) fis'8( cis) f,16( \f aes c ees) g-.  bes8.      | % 41
     r2 e,,16-.  \p e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 42
     a4-.  aes2 \pp r8 ees'~\fermata  \p    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72
@@ -204,10 +204,11 @@ AVlavoiceDA = \relative c'{
     R1 *9  | % 
     ais2( \pp a)      | % 10
     c2. r4      | % 11
-    ees,16( \< \p ^\markup { "sul C" } f gis a) bes2( \! \mf g4)      | % 12
+    \override TextSpanner #'(bound-details left text) = "sul C"
+    ees,16( \< \p \startTextSpan f gis a) bes2( \! \mf g4)      | % 12
     fis( c') b4.( ees8)      | % 13
     cis4-. \downbow  d2.~\downbow       | % 14
-    d8 r r4 r2      | % 15
+    d8 \stopTextSpan r r4 r2      | % 15
     R1  | % 
     r4 r \fermata bes2:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r c:32 \espressivo       | % 18
@@ -216,7 +217,7 @@ AVlavoiceDA = \relative c'{
     r4 a2.~ \f \>     | % 20
     a8( \mf d,) b'( g) c4~ c16 bes( d b)      | % 21
     c( bes aes8~) aes4 g16-.  aes-.  aes-.  bes-.  r4      | % 22
-    e1      | % 23
+    e1 \espressivo     | % 23
     <des ges>16-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.       | % 24
     \times 2/3{c8-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   }      | % 25
     \times 2/3{d-.  d-.  d-.   } \times 2/3{d-.  d-.  d-.   } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. }     | % 26
@@ -268,7 +269,7 @@ AVlcvoiceEA = \relative c{
     f8.( \mf ges16) a8( ges) e ees16( f c a) cis,8      | % 22
     gis'( dis' cis c) d( c) d4      | % 23
     e,8( a) c( f) fis( gis) cis4      | % 24
-    bes,( ees,) aes des      | % 25
+    bes,( ees,) aes--( des--)      | % 25
     fis16( d b g e) fis'-.  b,-.  e-.  a,-.  d-.  g,-.  ees'-.  c-.  aes'( f des      | % 26
     bes) bes-.  aes-.  aes-.  aes-.  aes-.  aes-.  aes-.  aes( ees' a, fis') d( b g e')      | % 27
     f8 r bes,16( ees aes des,) \times 4/6{fis16( d b') g( e' c)  } a'4~      | % 28

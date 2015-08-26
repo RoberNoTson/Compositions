@@ -52,11 +52,9 @@ AvoiceAA = \relative c{
     g,( a) d8-.  r g4->       | % 14
     e2 d8->  \mf c-.  a4      | % 15
     bes16-> -.  \< bes-.  bes8-.  aes-.  g-.  fis4-.  \f r      | % 16
-    b'8( c)  g-.  f-.  e-.  e-.  b-.  b-.       | % 17
-    %    c(  d)  g,-.  c-.  g-.  g'-.  f-> ( e)      | % 18
-    c(  d)  g,-.  c-.  g4  f'8-> ( e)      | % 18
-    c( d) g,-.  d'-.  a( b) d4      | % 19
-    %    e8( d) g,-.  g'-.  g,-.  g'-.  d-.  d-.       | % 20
+    b'8( c)  g-.(  f-.)  e4  b8-.(  b-.)       | % 17
+    c(  d)  g,-.(  c-.)  g4  f'8-> ( e)      | % 18
+    c( d) g,-.(  d'-.)  a( b) d( c)      | % 19
     e8( d) g,-.  g'-.  g,4-.  d'8-.  d-.       | % 20
     g,-.  g'-.  g,-.  f'-.  d-.  r f4->       | % 21
     g8-. \upbow  a16-. \downbow ( g-.  f8-. ) e-.  b'-.  r r4      | % 22
@@ -151,9 +149,9 @@ AvoiceAA = \relative c{
     \tempo "Tempo I" 4 = 96  
     fis1 \mf      | % 55
     r2 r4 r      | % 56
-    <d a'>2->  \f r      | % 57
-    <d a'>1 \>      | % 58
-    r4 \! a8-. \mf  a4.\espressivo  r4      | % 59
+    <d a'>1 \f    | % 57
+    <d a'>2->   r      | % 58
+    r4 a8-. \mf  a4.\espressivo  r4      | % 59
     gis\espressivo  \p r a\espressivo  r      | % 60
     gis\espressivo  r a\espressivo  r      | % 61
     r a\espressivo  r r      | % 62

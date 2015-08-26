@@ -31,10 +31,11 @@ AvoiceAA = \relative c'{
     R1 *9  | % 
     ais2( \pp a)      | % 10
     c2. r4      | % 11
-    ees,16( \< \p f gis a) bes2( \! \mf g4)      | % 12
+    \override TextSpanner #'(bound-details left text) = "sul C"
+    ees,16( \< \p \startTextSpan f gis a) bes2( \! \mf g4)      | % 12
     fis( c') b4.( ees8)      | % 13
     cis4-. \downbow  d2.~\downbow       | % 14
-    d8 r r4 r2      | % 15
+    d8 \stopTextSpan r r4 r2      | % 15
     R1  | % 
     r2 bes:32 \espressivo  ^\markup {\upright  "whip tremolo"} \mf      | % 17
     r c:32 \espressivo       | % 18
@@ -43,7 +44,7 @@ AvoiceAA = \relative c'{
     r4 a2.~ \f \>      | % 20
     a8( \mf d,) b'( g) c4~ c16 bes( d b)      | % 21
     c( bes aes8~) aes4 g16-.  aes-.  aes-.  bes-.  r4      | % 22
-    e1      | % 23
+    e1 \espressivo     | % 23
     <des ges>16-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.  <des ges>-.       | % 24
     \times 2/3{c8-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   } \times 2/3{c-.  c-.  c-.   }      | % 25
     \times 2/3{d-.  d-.  d-.   } \times 2/3{d-.  d-.  d-.   } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. } \times 4/6{d16-.  d-.  d-. d-.  d-.  d-. }     | % 26

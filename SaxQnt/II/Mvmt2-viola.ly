@@ -107,7 +107,7 @@ AvoiceAA = \relative c'{
     g16-.  \mf g-.  g-.  g-.  g-.  g-.  g-.  g-.       | % 73
     g-.  g-.  g-.  g-.  g-.  g-.  g-.  g-.       | % 74
     c'( a f d) c( f d c)      | % 75
-    ais'-.  \mf ais-.  ais-.  ais-.  ais-.  ais-.  ais-.  ais-.       | % 76
+    ais'-. ais-.  ais-.  ais-.  ais-.  ais-.  ais-.  ais-.       | % 76
     c( a f d) c( f g gis)      | % 77
     ais-.  ais-.  ais-.  ais-.  ais-.  ais-.  ais-.  ais-.       | % 78
     a-.  a-.  a-.  a-.  a-.  a-.  a-.  a-.       | % 79

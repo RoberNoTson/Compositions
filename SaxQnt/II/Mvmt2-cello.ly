@@ -28,7 +28,7 @@ AvoiceAA = \relative c{
     %bartimesig: 
     \time 9/8 
     \tempo "Allegretto" 4. = 80  
-    des4. ^\markup {\italic "pizz."} \p f8-.  fis-.  g-.  gis-.  r r      | % 1
+    des4. ^\markup {\italic "pizz."} \p f8-.  fis-.  g-.  aes-.  r r      | % 1
     ges-.  f-.  e-.  ees4. d8-.  f-.  des-.       | % 2
     c4. des4. ees4.      | % 3
     aes,4. des8-.  ees-.  e-.  f-.  r4      | % 4
@@ -119,12 +119,13 @@ AvoiceAA = \relative c{
     R2 *4  | % 
     d8-.  \mf d-.  d-.  d-.       | % 105
     d-.  d-.  d-.  d-.       | % 106
-    g''16( e c a) g( c a g)      | % 107
-    d,8-.  d-.  d-.  d-.       | % 108
+    
+    g'16( e c a) g( c a g)      | % 107
+    d8-.  d-.  d-.  d-.       | % 108
     e-.  e-.  e16-. \< e-. e-. e-.      | % 109
     e16-.  \f e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 110
     e-.  e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 111
-    e'-.  \< e-.  e-.  e-.  f-.  f-.  f-.  f-.     | % 112
+    e'-. \p \< e-.  e-.  e-.  f-.  f-.  f-.  f-.     | % 112
     ges16-. -> \> \ff \downbow f( \downbow e ees d des c b) \pp \bar "|." 
 }% end of last bar in partorvoice
 

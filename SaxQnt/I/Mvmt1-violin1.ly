@@ -147,8 +147,8 @@ AvoiceAA = \relative c'{
     \tempo "Tempo I" 4 = 96  
     fis'4 \mf r r2      | % 55
     r2 r4 r      | % 56
-    <ees' c'>1 \f      | % 57
-    <ees c'>2->  r      | % 58
+    <ees' c'>2-> \f r      | % 57
+    <ees c'>1 \mf     | % 58
     R1 *5  | % 
     <d, fis>1( \> \pp ^\markup {\upright  "sul pont."}      | % 64
     <d fis>2.) \! \bar "|." 

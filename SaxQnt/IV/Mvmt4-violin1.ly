@@ -95,22 +95,22 @@ AvoiceAB = \relative c'{
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     R1 *2  | % 
-    r8 a'( \< \mf gis b) d( cis c dis)      | % 64
+    r8 a'( \< \mf \downbow gis b) d( cis c dis)      | % 64
     e2 \! \f e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
     r8 d( cis e) g( \< fis f gis)      | % 67
     a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r fis,2 \mf      | % 69
     r8 fis-.  r fis-.  e4 e      | % 70
-    r8 d'4-. ->  d8-.  f4( e)      | % 71
-    e-.  r r2      | % 72
-    r8 d4-. ->  d8-.  f4( e)      | % 73
-    c8-.  e( \< dis fis) a( gis g ais)      | % 74
+    r8 d'4-. ->  d8-.  f4( \< e)      | % 71
+    e-. \f  r r2      | % 72
+    r8 d4-. ->  \mf d8-.  f4( e)      | % 73
+    c8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
     b2 \! \f b,      | % 75
     \times 2/3{d4 f cis  } c2      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
     e2 \times 2/3{g4 ais fis  }      | % 78
-    f4-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    f4-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     a,2. r4      | % 81
     %bartimesig: 
@@ -152,7 +152,7 @@ AvoiceAB = \relative c'{
     b2 gis8_( b16 d)      | % 110
     cis4 \grace{ b16(  [ cis  ]  } b4) a8.( cis16)      | % 111
     e2( \stemUp a8-.) gis16( a)      | % 112
-    gis4 \stemDown d e8-.  gis,(      | % 113
+    gis4 \stemDown d e8-.  gis,_(      | % 113
     a2.)      | % 114
     \stemNeutral 
     a'8-. a16( gis) fis4 d      | % 115
@@ -162,7 +162,7 @@ AvoiceAB = \relative c'{
     a'8-.  a16( gis) fis4 d      | % 119
     gis8-.  gis16( fis) cis2      | % 120
     fis8\( e16( d)\) cis4 \grace{ a16(  [ b  ]  } a4)      | % 121
-    \stemUp b4 a2      | % 122
+    \stemDown b4 a2      | % 122
     %bartimesig: 
     \time 2/4 
     \stemNeutral
@@ -231,11 +231,10 @@ AvoiceAA = \relative c'{
     e2 e8~^4 e^0      | % 
     e2.      | % 
     e2 \stemDown \override Fingering #'direction = #DOWN a,4_0     | % 
-    a \stemUp e' e8 e~      | % 
+    a \stemUp e' e8 e^~      | % 
     e2.      | % 
     s2. *7
-    \stemDown
-    a,2.
+    e2.
 }% end of last bar in partorvoice
 
 ApartA =  << 

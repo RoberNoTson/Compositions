@@ -38,7 +38,7 @@ AvoiceAA = \relative c'{
     f)  fis-.  g-.  ees'4.( f,4.)      | % 7
     bes4.( aes'8)  g-.  ges-.  f-.  r4      | % 8
     ges,8( ees g) bes4.( aes4.)      | % 9
-    f8( \< \p fis) g-. bes-. \mf r4 r4.      | % 10
+    f8( \< \p fis) g-. bes-. \f r4 r4.      | % 10
     d4. \< \p b4.( cis8)  d-.  ees-.       | % 11
     f4.( \! \mf d2.)      | % 12
     ees,8( \< \p f fis g gis a bes) g'-.  f-.       | % 13
@@ -63,24 +63,25 @@ AvoiceAA = \relative c'{
     r2 r4 c'16( ^\markup {\italic "espressivo"} \pp d e g)      | % 31
     fis2.\espressivo  r4      | % 32
     r2 r4 c16( \p d e g)      | % 33
-    fis2.-- \espressivo  \< r8 g( \! \mp      | % 34
-    fis4.\espressivo ) e8( d4.) \mf ees8(      | % 35
-    g,8.)( \> \mp ges16 \times 4/6{f16 e ees  d des c  } b8) \ppp r \! r4      | % 36
+    fis2.-- \espressivo  \< r8 g( \mp      | % 34
+    fis4.\espressivo ) e8( d4.) ees8(      | % 35
+    g,8.)( \> \mp ges16 \times 4/6{f16 e ees  d des c  } b8) \! r r4      | % 36
     R1  | % 
     r2 r4 c'16( \mp d e fis)      | % 38
     fis2.--  r8 g(      | % 39
     f4.) ees8( d4.) bes'8      | % 40
     f'1\espressivo ( \< \fp      | % 41
     f)       | % 42
-    f2 \> \f \glissando fis,,4 \ppp r      | % 43
-    cis8.( \< \p d16 dis e f fis) \times 4/6{b16( \! \> \mp bes a aes g ges  } f8-. ) \! \p r      | % 44
+    \once \override Glissando #'style = #'zigzag
+    f2 \> \f \glissando fis,,4 \! r      | % 43
+    cis8.( \< \p d16 dis e f fis) \times 4/6{b16( \> bes a aes g ges  } f8-. ) \! r      | % 44
     r2 b16( \mf c d) r r4      | % 45
     r c16( e d) a r4 c16( \mp d e) g      | % 46
     fis2.-- \espressivo  r8 g(      | % 47
     fis4.) ees8( d4) c16( d ees) fis      | % 48
     b,8.( \> bes16 \times 4/6{a16 aes g ges f e  } d8)  \ppp r r4      | % 49
     r \times 2/3{b'8( \p d f  } \times 2/3{e b a  } f8) r      | % 50
-    r2 e8 \pp cis' r4      | % 51
+    r2 e8-. \pp cis'-. r4      | % 51
     R1  | % 
     r4 \times 2/3{b8( \pp d f) } e16( d b a fis8) r      | % 53
     r2 r4 f'16( \pp d b gis      | % 54

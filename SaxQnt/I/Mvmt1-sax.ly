@@ -145,14 +145,14 @@ AvoiceAA = \relative c'{
     d16-.  d-.  d8 r16 d-.  d8 r16 d,-.  d8 d16->  d-.  r8      | % 53
     %bartimesig: 
     \time 3/4 
-    r2 ^\markup {\upright  "rall. al ..."} r4     \bar "||"      | % 54
+    r2. ^\markup {\upright  "rall. al ..."}     \bar "||"      | % 54
     %bartimesig: 
     \time 4/4 
     \tempo "Tempo I" 4 = 96  
     gis8-.  \mf r r4 r2     | % 55
     r2 r4 b,8-> \downbow  \< cis-.       | % 56
-    f1 \! \f      | % 57
-    f2->  r      | % 58
+    f2-> \f r      | % 57
+    f1 \mf     | % 58
     R1  | % 
     bes,,1~ \p      | % 60
     bes~      | % 61

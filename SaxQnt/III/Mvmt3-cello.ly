@@ -43,7 +43,7 @@ AvoiceAA = \relative c{
     f8.( \mf ges16) a8( ges) e ees16( f c a) cis,8      | % 22
     gis'( dis' cis c) d( c) d4      | % 23
     e,8( a) c( f) fis( gis) cis4      | % 24
-    bes,( ees,) aes des      | % 25
+    bes,( ees,) aes--( des--)      | % 25
     fis16( d b g e) fis'-.  b,-.  e-.  a,-.  d-.  g,-.  ees'-.  c-.  aes'( f des      | % 26
     bes) bes-.  aes-.  aes-.  aes-.  aes-.  aes-.  aes-.  aes( ees' a, fis') d( b g e')      | % 27
     f8 r bes,16( ees aes des,) \times 4/6{fis16( d b') g( e' c)  } a'4~      | % 28

@@ -62,8 +62,8 @@ AvoiceAA = \relative c'{
     dis,16( \< \p ais' f c' g d' fis a, cis e gis b) \mf r4      | % 36
     R1 *2  | % 
     r2 r4 bes,16( \mf g ees c')      | % 39
-    aes( f des8) r fis' b,16( e) a,( d) r4      | % 40
-    d16( \< a e' b) fis'8( cis) f,16( \! \f aes c ees) g-.  bes8.      | % 41
+    aes( f des8) r fis' \f b,16( e) a,( d) r4      | % 40
+    d16( \mf \< a e' b) fis'8( cis) f,16( \f aes c ees) g-.  bes8.      | % 41
     r2 e,,16-.  \p e-.  e-.  e-.  e-.  e-.  e-.  e-.       | % 42
     a4-.  aes2 \pp r8 ees'~\fermata  \p    \bar "||"      | % 43
     \tempo "Tempo I" 4 = 72  

@@ -99,17 +99,17 @@ ATSaxvoiceAA = \relative c'{
     r8 d'-. \f r d-.  d4 d      | % 65
     r8 d-.  r d-.  bes4 bes      | % 66
     R1  | % 
-    r8 e,-.  r e-.  fis4 ais      | % 68
+    r8 e,-.  r e-.  fis4( ais)      | % 68
     gis-> -.  r c,2 \mf      | % 69
     r8 cis-.  r cis-.  cis4 cis      | % 70
-    r8 e'4-. ->  e8-.  g4( fis)      | % 71
-    cis-.  r r2      | % 72
-    r8 e4-. ->  e8-.  g4( fis)      | % 73
+    r8 e'4-. ->  e8-.  g( \< g,) fis16( g gis ais)     | % 71
+    cis4-. \f r r2      | % 72
+    r8 e4-. -> \mf  e8-.  g4( fis)      | % 73
     b,8-.  fis'( \< eis gis) b( ais a bis)      | % 74
     r \! a,-.  \f r a-.  a4 a      | % 75
     r8 a-.  r a-.  f4 f      | % 76
     g8->  r r4 r2      | % 77
-    r8 b,-.  r b-.  cis4->  f      | % 78
+    r8 b,-.  r b-.  cis4->(  f)      | % 78
     dis-> -.  r c fis      | % 79
     r8 ais-.  r ais-.  b4-.  b-.       | % 80
     R1  | % 
@@ -269,22 +269,22 @@ AVlnvoiceBB = \relative c'{
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     R1 *2  | % 
-    r8 a'( \< \mf gis b) d( cis c dis)      | % 64
+    r8 a'( \< \mf \downbow gis b) d( cis c dis)      | % 64
     e2 \! \f e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
     r8 d( cis e) g( \< fis f gis)      | % 67
     a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r fis,2 \mf      | % 69
     r8 fis-.  r fis-.  e4 e      | % 70
-    r8 d'4-. ->  d8-.  f4( e)      | % 71
-    e-.  r r2      | % 72
-    r8 d4-. ->  d8-.  f4( e)      | % 73
-    c8-.  e( \< dis fis) a( gis g ais)      | % 74
-    b2 \! \f b,      | % 75
+    r8 d'4-. ->  d8-.  f4( \< e)      | % 71
+    e-. \f  r r2      | % 72
+    r8 d4-. ->  \mf d8-.  f4( e)      | % 73
+    c8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
+    b2 \f b,      | % 75
     \times 2/3{d4 f cis  } c2      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
     e2 \times 2/3{g4 ais fis  }      | % 78
-    f4-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    f4-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     a,2. r4      | % 81
     %bartimesig: 
@@ -325,7 +325,7 @@ AVlnvoiceBB = \relative c'{
     b2 gis8_( b16 d)      | % 110
     cis4 \grace{ b16(  [ cis  ]  } b4) a8.( cis16)      | % 111
     e2( \stemUp a8-.) gis16( a)      | % 112
-    gis4 \stemDown d e8-.  gis,(      | % 113
+    gis4 \stemDown d e8-.  gis,_(      | % 113
     a2.)      | % 114
     \stemNeutral 
     a'8-. a16( gis) fis4 d      | % 115
@@ -335,7 +335,7 @@ AVlnvoiceBB = \relative c'{
     a'8-.  a16( gis) fis4 d      | % 119
     gis8-.  gis16( fis) cis2      | % 120
     fis8\( e16( d)\) cis4 \grace{ a16(  [ b  ]  } a4)      | % 121
-    \stemUp b4 a2      | % 122
+    \stemDown b4 a2      | % 122
     %bartimesig: 
     \time 2/4 
     \stemNeutral
@@ -404,11 +404,10 @@ AVlnvoiceBA = \relative c'{
     e2 e8~^4 e^0      | % 
     e2.      | % 
     e2 \stemDown \override Fingering #'direction = #DOWN a,4_0     | % 
-    a \stemUp e' e8 e~      | % 
+    a \stemUp e' e8 e^~      | % 
     e2.      | % 
     s2. *7
-    \stemDown
-    a,2.
+    e2.
 }% end of last bar in partorvoice
 
     
@@ -475,9 +474,9 @@ AVlnvoiceCA = \relative c'{
     \times 2/3{b( cis dis)  } \times 2/3{f( dis cis)  }      | % 50
     a4--  a16-.  a8.-.       | % 51
     gis4-- ( a-- )      | % 52
-    a a16-.  a8.-. \>      | % 53
+    a \> a16-.  a8.-.      | % 53
     a4 a16-.  a8.-.       | % 54
-    a4 a16-. \<  a8.-.       | % 55
+    a4 \< a16-.  a8.-.       | % 55
     a8 \! r r4      | % 56
     e'16-.  \f e-.  e-.  e-.  e-.  e-.  g-.  r      | % 57
     r g-.  g-.  g-.  d-.  d-.  d-.  r      | % 58
@@ -488,22 +487,22 @@ AVlnvoiceCA = \relative c'{
     \time 4/4 
     \tempo "poco meno mosso" 4 = 112
     R1 *2  | % 
-    r8 a( \< \mf gis b) d( cis c dis)      | % 64
+    r8 a( \< \mf \downbow gis b) d( cis c dis)      | % 64
     e2 \! \f e4 e,      | % 65
     \times 2/3{g4 ais fis  } f2      | % 66
     r8 d( cis e) g( \< fis f gis)      | % 67
     a2 \> r8 \! c( dis b)      | % 68
     ais4-> -.  r dis,2 \mf      | % 69
     r8 dis-.  r dis-.  e4 e      | % 70
-    r8 d'4-. ->  d8-.  f4( e)      | % 71
-    gis,-.  r r2      | % 72
-    r8 d'4-. ->  d8-.  f4( e)      | % 73
-    e,8-.  e( \< dis fis) a( gis g ais)      | % 74
+    r8 d'4-. ->  d8-.  f4( \< e)      | % 71
+    gis,-. \f r r2      | % 72
+    r8 d'4-. -> \mf d8-.  f4( e)      | % 73
+    e,8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
     b2 \! \f b4 e,      | % 75
     \times 2/3{d4 f cis  } c2      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
     e2 \times 2/3{g4 ais fis  }      | % 78
-    f4-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    f4-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     e2. r4      | % 81
     %bartimesig: 
@@ -651,9 +650,10 @@ AVlavoiceDA = \relative c'{
     \times 2/3{g8( a cis)  } \times 2/3{b( a g)  }      | % 50
     g4--  fis16-.  fis8.-.       | % 51
     gis4-- ( fis-- )      | % 52
-    e e16-. \>  e8.-.       | % 53
+    
+    e \> e16-.  e8.-.       | % 53
     dis4 dis16-.  dis8.-.       | % 54
-    e4 \! e16-. \< e8.-.       | % 55
+    e4 \< e16-. e8.-.       | % 55
     e8 \! r r4      | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  e,-.  e-.  e-.  r      | % 58
@@ -670,17 +670,17 @@ AVlavoiceDA = \relative c'{
     r8 e-.  r e-.  d4 d      | % 66
     R1  | % 
     r8 g,-.  r g-.  a4 gis      | % 68
-    dis'-> -.  f8--  \mf fis--  dis( c) cis( d)      | % 69
+    dis'-> -.  f8-- \mf \downbow fis--  dis( c) cis( d)      | % 69
     \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
-    d,2-> \!  d      | % 71
-    e4-.  e8( \f f) e( dis) b( c)      | % 72
-    d2-> \> r \!      | % 73
-    c8-.  e( \< dis fis) a( gis g ais)      | % 74
+    d,2-> \!  d \<     | % 71
+    e4-. \f e8( f) e( \> dis) b( c)      | % 72
+    d2-> \mf r       | % 73
+    c8-. \downbow e( \< \downbow dis fis) a( gis g ais)      | % 74
     r \! b,-.  \f r b-.  b4 b      | % 75
     r8 b-.  r b-.  a4 a      | % 76
     r8 a( gis b) d( cis c dis)      | % 77
-    r d,-.  r d-.  e4 dis'      | % 78
-    ais-> -.  c'8--  cis--  ais( g) gis( a)      | % 79
+    r d,-.  r d-.  e4( dis')      | % 78
+    ais-> -. \downbow c'8-- \downbow cis--  ais( g) gis( a)      | % 79
     fis'4.( f8) d( b dis e)      | % 80
     c2. r4      | % 81
     %bartimesig: 
@@ -701,11 +701,11 @@ AVlavoiceDA = \relative c'{
     R2  | % 
     r4 r8 \fermata g'16-.  \f g-.       | % 94
     fis( g) g-.  g-.  fis( g) g-.  g-.       | % 95
-    e8-.  d-.  r d16-.  d-.       | % 96
-    cis( b) b-.  b-.  cis( b) b-.  b-.       | % 97
-    b8-.  g-.  r e'16-.  e-.       | % 98
-    dis( e) e-.  e-.  dis( e) e-.  e-.       | % 99
-    d8-.  cis-.  r c16-.  c-.       | % 100
+    e8 \grace{cis'( } d-.) \grace{cis( } d-.) \grace{cis( } d-.)  | % 96
+    r16 e,-. g-. b-. a( g) e-. d-.  | % 97
+    b8 \grace{d'( } e-.) \grace{d( } e-.) r | % 98
+    dis,16( e) gis-.  a-.  b( g) fis-.  e-.       | % 99
+    gis8-.  b,-.  r c16-.  c-.       | % 100
     g'( fis) f-.  e-.  dis8-.  cis-.       | % 101
     b r r4      | % 102
     R2 *3    \bar "||"     | %
@@ -808,7 +808,7 @@ AVlcvoiceEA = \relative c{
     r4 f16( \< \p g gis b)      | % 29
     e2~      | % 30
     e      | % 31
-    \times 2/3{gis8( \f fis e) \>  } \times 2/3{d( e fis)  }      | % 32
+    \times 2/3{gis8--( \f fis e) \>  } \times 2/3{d( e fis)  }      | % 32
     \times 2/3{gis( \< fis e)  } \times 2/3{d( e fis)  }      | % 33
     a4-> \! gis~ \>      | % 34
     gis2      | % 35
@@ -831,7 +831,7 @@ AVlcvoiceEA = \relative c{
     b4-- ( d,-- )      | % 52
     e2 \>     | % 53
     fis4 fis16-.  fis8.-.       | % 54
-    a,8-. \!  a-.  a16-. \< a8.-.       | % 55
+    a,8-. \< a-.  a16-.  a8.-.       | % 55
     a8-.  r d-.  d-.       | % 56
     d'16-.  \f d-.  d-.  d-.  d-.  d-.  d-.  r      | % 57
     r d-.  d-.  d-.  d-.  d-.  d-.  r      | % 58
@@ -848,16 +848,16 @@ AVlcvoiceEA = \relative c{
     a4.->  r8 b4.-> -.  b8-.       | % 66
     bes4->  r e2      | % 67
     a,4.->  r8 c4.-> -.  b8-.       | % 68
-    ais4-> -.  f'8--  \mf fis--  dis( c) cis( d)      | % 69
+    ais4-> -.  f'8-- \mf \downbow fis--  dis( c) cis( d)      | % 69
     \times 2/3{b'4 \< ais g  } \times 2/3{e \> gis a  }      | % 70
-    d,2-> \! d4 (e16 f fis g)      | % 71
-    gis4-. e'8( \f f) e( dis) b( c)      | % 72
-    d,2-> \>  r \!     | % 73
-    a8-.  e'( \< dis fis) a( gis g ais)      | % 74
+    d,2-> \! d4( \< e16 f fis g)      | % 71
+    gis4-. \f e'8( f) e( \> dis) b( c)      | % 72
+    d,2-> \mf  r      | % 73
+    a8-. \downbow e'( \< \downbow dis fis) a( gis g ais)      | % 74
     e,4.->  \! \f r8 e4.-> -.  e8-.       | % 75
     e4.->  r8 fis4.-> -.  fis8-.       | % 76
     f->  r r4 b2      | % 77
-    e,4.->  r8 g4->  fis      | % 78
+    e,4.->  r8 g4->(  fis)      | % 78
     f-> -.  r cis' cis      | % 79
     r8 fis-.  r fis-.  fis4-.  fis-.       | % 80
     R1  | % 
