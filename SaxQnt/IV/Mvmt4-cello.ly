@@ -169,7 +169,7 @@ AvoiceAA = \relative c{
     e,2    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     f8-.  \mp f16-.  f-.  f8-.  f16-.  f-.       | % 131
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 132
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 133

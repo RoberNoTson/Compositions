@@ -154,7 +154,7 @@ ATSaxvoiceAA = \relative c'{
     cis2~   \bar "||"      | % 130
     %barkeysig: 
     \key c \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     cis4 r      | % 131
     R2  | % 
     b,8-.  \mp b16-.  b-.  b8-.  b16-.  b-.       | % 133
@@ -349,7 +349,7 @@ AVlnvoiceBB = \relative c'{
     e2~    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     e4 r      | % 131
     R2 *4  | % 
     r4 bes8 \f \upbow c16 d      | % 136
@@ -551,7 +551,7 @@ AVlnvoiceCA = \relative c'{
     gis2~    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     gis4 r      | % 131
     R2 *4  | % 
     r4 bes8 \f \upbow c16 d      | % 136
@@ -729,7 +729,7 @@ AVlavoiceDA = \relative c'{
     d2~    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     d4 r      | % 131
     R2 *3  | % 
     des,8-.  \< \mf des16-.  des-.  des8-.  des16-.  des-.       | % 135
@@ -917,7 +917,7 @@ AVlcvoiceEA = \relative c{
     e,2    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     f8-.  \mp f16-.  f-.  f8-.  f16-.  f-.       | % 131
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 132
     f8-.  f16-.  f-.  f8-.  f16-.  f-.       | % 133

@@ -160,7 +160,7 @@ AvoiceAA = \relative c'{
     d2~    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     d4 r      | % 131
     R2 *3  | % 
     des,8-.  \< \mf des16-.  des-.  des8-.  des16-.  des-.       | % 135

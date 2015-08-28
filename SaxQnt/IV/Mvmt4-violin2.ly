@@ -158,7 +158,7 @@ AvoiceAA = \relative c'{
     gis2~    \bar "||"      | % 130
     %barkeysig: 
     \key bes \major 
-    \tempo "Allegro" 4 = 132
+    \tempo "Vivace" 4 = 132
     gis4 r      | % 131
     R2 *4  | % 
     r4 bes8 \f \upbow c16 d      | % 136
