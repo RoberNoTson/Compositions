@@ -19,4 +19,5 @@
   tagline = ##f
 }
 
-\markup { "(Blank page)" }
+%\markup { "(Blank page)" }
+\markup { " " }
