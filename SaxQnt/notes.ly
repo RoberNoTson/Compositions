@@ -70,7 +70,7 @@
     \line { " " }
     \line { " " }
       \override #'(line-width . 82)
-      \wordwrap { Pedal tone, sounding 1 octave below the written pitch. Performed by drawing the bow slowly with firm pressure at the exact point of the string where the third octave harmnoic occurs; approximately equidistant between the bridge and fingerboard. }
+      \wordwrap { Pedal tone, sounding 1 octave below the written pitch. Performed by drawing the bow slowly with firm pressure at the point on the string approximately equidistant between the bridge and fingerboard. }
     \line { " " }
     \line { " " }
       \override #'(line-width . 82)
@@ -97,22 +97,25 @@
 
 
 \markup {
-  \wordwrap { Similar to the 140 character limit of Tweets, these short musical ideas are constrained by time or measure count. 
-    Each section within a movement expresses a simple reaction to some part of the locale indicated by the title/hashtag, without any significant musical development of the idea. 
-    Collectively they form a melange of impressions from each location.
+  \wordwrap { Similar to the 140 character limit of Tweets, 
+    short musical ideas within each movement, constrained by a time limit or measure count, 
+    express a personal reaction to some aspect of the location in the hashtag title.  
+    Collectively these sections form a melange of impressions from each place 
+    as though groups of people were tweeting about the sights and their feelings. 
   }
 }
-
-\markup { 
-  \column {
-  \line { " " }
-  \line { " " }
-  \line { " " }
-  \line { " " }
-  \line { " " }
-  \line { " " }
-  \line { " " }
-  \line { " " }
-}
-}
+%%
+%\markup { 
+%  \column {
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%  \line { " " }
+%}
+%}
+%%
 
