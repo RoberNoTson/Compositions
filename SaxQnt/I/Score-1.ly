@@ -35,7 +35,7 @@
     }
 
 ATSaxvoiceAA = \relative c'{
-    \set Staff.instrumentName = #"Tenor Sax"
+    \set Staff.instrumentName = #"Tenor Sa#"
     \set Staff.shortInstrumentName = #"T. Sax."
     \clef treble
     %staffkeysig
